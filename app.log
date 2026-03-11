@@ -1,0 +1,38 @@
+2026-03-11 13:28:02,833 - INFO - FastAPI anomaly detection service starting up
+2026-03-11 13:28:02,956 - INFO - Started server process [99549]
+2026-03-11 13:28:02,956 - INFO - Waiting for application startup.
+2026-03-11 13:28:02,957 - INFO - Application startup complete.
+2026-03-11 13:28:02,958 - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-11 13:31:40,433 - INFO - Shutting down
+2026-03-11 13:31:40,546 - INFO - Waiting for application shutdown.
+2026-03-11 13:31:40,550 - INFO - Application shutdown complete.
+2026-03-11 13:31:40,551 - INFO - Finished server process [99549]
+2026-03-11 13:40:59,096 - INFO - FastAPI anomaly detection service starting up
+2026-03-11 13:40:59,230 - INFO - Started server process [4030]
+2026-03-11 13:40:59,230 - INFO - Waiting for application startup.
+2026-03-11 13:40:59,231 - INFO - Application startup complete.
+2026-03-11 13:40:59,232 - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-11 13:43:22,506 - INFO - /health called
+2026-03-11 14:01:06,571 - INFO - Shutting down
+2026-03-11 14:01:06,681 - INFO - Waiting for application shutdown.
+2026-03-11 14:01:06,683 - INFO - Application shutdown complete.
+2026-03-11 14:01:06,684 - INFO - Finished server process [4030]
+2026-03-11 16:20:35,038 - INFO - FastAPI anomaly detection service starting up
+2026-03-11 16:20:35,178 - INFO - Started server process [36302]
+2026-03-11 16:20:35,179 - INFO - Waiting for application startup.
+2026-03-11 16:20:35,179 - INFO - Application startup complete.
+2026-03-11 16:20:35,180 - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-11 16:21:17,043 - INFO - Shutting down
+2026-03-11 16:21:17,156 - INFO - Waiting for application shutdown.
+2026-03-11 16:21:17,157 - INFO - Application shutdown complete.
+2026-03-11 16:21:17,157 - INFO - Finished server process [36302]
+2026-03-11 17:44:45,767 - INFO - FastAPI anomaly detection service starting up
+2026-03-11 17:44:45,890 - INFO - Started server process [44518]
+2026-03-11 17:44:45,891 - INFO - Waiting for application startup.
+2026-03-11 17:44:45,891 - INFO - Application startup complete.
+2026-03-11 17:44:45,895 - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-11 17:45:09,473 - INFO - /health called
+2026-03-11 17:52:15,762 - INFO - Shutting down
+2026-03-11 17:52:15,894 - INFO - Waiting for application shutdown.
+2026-03-11 17:52:15,899 - INFO - Application shutdown complete.
+2026-03-11 17:52:15,900 - INFO - Finished server process [44518]
