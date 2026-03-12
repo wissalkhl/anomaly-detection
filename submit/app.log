@@ -1,0 +1,1734 @@
+2026-03-11 13:28:02,833 - INFO - FastAPI anomaly detection service starting up
+2026-03-11 13:28:02,956 - INFO - Started server process [99549]
+2026-03-11 13:28:02,956 - INFO - Waiting for application startup.
+2026-03-11 13:28:02,957 - INFO - Application startup complete.
+2026-03-11 13:28:02,958 - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-11 13:31:40,433 - INFO - Shutting down
+2026-03-11 13:31:40,546 - INFO - Waiting for application shutdown.
+2026-03-11 13:31:40,550 - INFO - Application shutdown complete.
+2026-03-11 13:31:40,551 - INFO - Finished server process [99549]
+2026-03-11 13:40:59,096 - INFO - FastAPI anomaly detection service starting up
+2026-03-11 13:40:59,230 - INFO - Started server process [4030]
+2026-03-11 13:40:59,230 - INFO - Waiting for application startup.
+2026-03-11 13:40:59,231 - INFO - Application startup complete.
+2026-03-11 13:40:59,232 - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-11 13:43:22,506 - INFO - /health called
+2026-03-11 14:01:06,571 - INFO - Shutting down
+2026-03-11 14:01:06,681 - INFO - Waiting for application shutdown.
+2026-03-11 14:01:06,683 - INFO - Application shutdown complete.
+2026-03-11 14:01:06,684 - INFO - Finished server process [4030]
+2026-03-11 16:20:35,038 - INFO - FastAPI anomaly detection service starting up
+2026-03-11 16:20:35,178 - INFO - Started server process [36302]
+2026-03-11 16:20:35,179 - INFO - Waiting for application startup.
+2026-03-11 16:20:35,179 - INFO - Application startup complete.
+2026-03-11 16:20:35,180 - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-11 16:21:17,043 - INFO - Shutting down
+2026-03-11 16:21:17,156 - INFO - Waiting for application shutdown.
+2026-03-11 16:21:17,157 - INFO - Application shutdown complete.
+2026-03-11 16:21:17,157 - INFO - Finished server process [36302]
+2026-03-11 17:44:45,767 - INFO - FastAPI anomaly detection service starting up
+2026-03-11 17:44:45,890 - INFO - Started server process [44518]
+2026-03-11 17:44:45,891 - INFO - Waiting for application startup.
+2026-03-11 17:44:45,891 - INFO - Application startup complete.
+2026-03-11 17:44:45,895 - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-11 17:45:09,473 - INFO - /health called
+2026-03-11 17:52:15,762 - INFO - Shutting down
+2026-03-11 17:52:15,894 - INFO - Waiting for application shutdown.
+2026-03-11 17:52:15,899 - INFO - Application shutdown complete.
+2026-03-11 17:52:15,900 - INFO - Finished server process [44518]
+2026-03-12 01:12:04,830 - INFO - FastAPI anomaly detection service starting up
+2026-03-12 01:12:05,432 - INFO - Started server process [4026]
+2026-03-12 01:12:05,433 - INFO - Waiting for application startup.
+2026-03-12 01:12:05,433 - INFO - Application startup complete.
+2026-03-12 01:12:05,434 - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-12 01:12:25,087 - INFO - Received /notify request with SNS message type: SubscriptionConfirmation
+2026-03-12 01:12:25,087 - INFO - Confirming SNS subscription at URL: https://sns.us-east-1.amazonaws.com/?Action=ConfirmSubscription&TopicArn=arn:aws:sns:us-east-1:221082171579:ds5220-dp1&Token=2336412f37fb687f5d51e6e2425929f52e8e345517f4a17044a6ed6c2525fbf281cfd11c2d16ea388925f02f7debd4bfe8636ef1c4a67436057a99ce88c0fbd4455ad5d79c3b07f835f618892b22ee37a6236adcc2a26b7441cb1e51a51f958c9830cb2e80ed8ddaac665a98b50f03d1
+2026-03-12 01:12:25,240 - INFO - SNS subscription confirmed successfully
+2026-03-12 01:19:07,264 - INFO - /health called
+2026-03-12 02:10:53,819 - INFO - /health called
+2026-03-12 02:13:09,969 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:13:09,969 - INFO - Notification contains 1 record(s)
+2026-03-12 02:13:09,969 - INFO - New file detected: raw/test.csv
+2026-03-12 02:13:09,969 - INFO - Queueing background processing for file: raw/test.csv
+2026-03-12 02:13:09,970 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/test.csv
+2026-03-12 02:13:10,062 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/test.csv
+2026-03-12 02:13:10,063 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:13:10,063 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:13:10,136 - WARNING - No existing baseline found in S3; starting with empty baseline
+2026-03-12 02:13:10,136 - INFO - Baseline loaded successfully
+2026-03-12 02:13:10,139 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:13:10,139 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:13:10,139 - INFO - Initialized new baseline channel 'temperature'
+2026-03-12 02:13:10,139 - INFO - Updated channel 'temperature': count=100, mean=21.8114, std=1.3294
+2026-03-12 02:13:10,139 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:13:10,140 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:13:10,140 - INFO - Initialized new baseline channel 'humidity'
+2026-03-12 02:13:10,140 - INFO - Updated channel 'humidity': count=100, mean=54.9479, std=7.3654
+2026-03-12 02:13:10,140 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:13:10,140 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:13:10,140 - INFO - Initialized new baseline channel 'pressure'
+2026-03-12 02:13:10,140 - INFO - Updated channel 'pressure': count=100, mean=1013.5555, std=3.7135
+2026-03-12 02:13:10,141 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:13:10,141 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:13:10,141 - INFO - Initialized new baseline channel 'wind_speed'
+2026-03-12 02:13:10,141 - INFO - Updated channel 'wind_speed': count=100, mean=9.4816, std=3.7285
+2026-03-12 02:13:10,315 - INFO - Anomaly detection completed successfully
+2026-03-12 02:13:10,346 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/test.csv
+2026-03-12 02:13:10,375 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:13:10,404 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:13:10,404 - INFO - Updated baseline saved to S3
+2026-03-12 02:13:10,433 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/test_summary.json
+2026-03-12 02:13:10,433 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 02:43:12,188 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:43:12,188 - INFO - Notification contains 1 record(s)
+2026-03-12 02:43:12,188 - INFO - New file detected: raw/sensors_20260312T024310.csv
+2026-03-12 02:43:12,188 - INFO - Queueing background processing for file: raw/sensors_20260312T024310.csv
+2026-03-12 02:43:12,189 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024310.csv
+2026-03-12 02:43:12,265 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024310.csv
+2026-03-12 02:43:12,265 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:43:12,265 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:43:12,391 - INFO - Baseline loaded successfully
+2026-03-12 02:43:12,392 - INFO - Baseline loaded successfully
+2026-03-12 02:43:12,392 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:43:12,392 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:43:12,392 - INFO - Updated channel 'temperature': count=200, mean=22.0094, std=1.5032
+2026-03-12 02:43:12,393 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:43:12,393 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:43:12,393 - INFO - Updated channel 'humidity': count=200, mean=55.1211, std=6.6158
+2026-03-12 02:43:12,393 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:43:12,393 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:43:12,394 - INFO - Updated channel 'pressure': count=200, mean=1013.3187, std=3.9788
+2026-03-12 02:43:12,394 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:43:12,394 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:43:12,394 - INFO - Updated channel 'wind_speed': count=200, mean=9.9204, std=3.4471
+2026-03-12 02:43:12,555 - INFO - Anomaly detection completed successfully
+2026-03-12 02:43:12,583 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024310.csv
+2026-03-12 02:43:12,612 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:43:12,639 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:43:12,639 - INFO - Updated baseline saved to S3
+2026-03-12 02:43:12,668 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024310_summary.json
+2026-03-12 02:43:12,668 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 02:44:12,024 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:44:12,024 - INFO - Notification contains 1 record(s)
+2026-03-12 02:44:12,024 - INFO - New file detected: raw/sensors_20260312T024411.csv
+2026-03-12 02:44:12,024 - INFO - Queueing background processing for file: raw/sensors_20260312T024411.csv
+2026-03-12 02:44:12,025 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024411.csv
+2026-03-12 02:44:12,151 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024411.csv
+2026-03-12 02:44:12,151 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:44:12,151 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:44:12,271 - INFO - Baseline loaded successfully
+2026-03-12 02:44:12,272 - INFO - Baseline loaded successfully
+2026-03-12 02:44:12,272 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:44:12,272 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:44:12,272 - INFO - Updated channel 'temperature': count=300, mean=21.9323, std=1.5501
+2026-03-12 02:44:12,273 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:44:12,273 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:44:12,273 - INFO - Updated channel 'humidity': count=300, mean=54.8570, std=7.1104
+2026-03-12 02:44:12,273 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:44:12,274 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:44:12,274 - INFO - Updated channel 'pressure': count=300, mean=1013.2049, std=4.0379
+2026-03-12 02:44:12,274 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:44:12,274 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:44:12,274 - INFO - Updated channel 'wind_speed': count=300, mean=10.0730, std=3.1620
+2026-03-12 02:44:12,437 - INFO - Anomaly detection completed successfully
+2026-03-12 02:44:12,490 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024411.csv
+2026-03-12 02:44:12,520 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:44:12,550 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:44:12,550 - INFO - Updated baseline saved to S3
+2026-03-12 02:44:12,580 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024411_summary.json
+2026-03-12 02:44:12,580 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 02:45:12,488 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:45:12,488 - INFO - Notification contains 1 record(s)
+2026-03-12 02:45:12,488 - INFO - New file detected: raw/sensors_20260312T024511.csv
+2026-03-12 02:45:12,488 - INFO - Queueing background processing for file: raw/sensors_20260312T024511.csv
+2026-03-12 02:45:12,490 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024511.csv
+2026-03-12 02:45:12,579 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024511.csv
+2026-03-12 02:45:12,580 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:45:12,580 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:45:12,700 - INFO - Baseline loaded successfully
+2026-03-12 02:45:12,700 - INFO - Baseline loaded successfully
+2026-03-12 02:45:12,701 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:45:12,701 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:45:12,701 - INFO - Updated channel 'temperature': count=400, mean=21.9406, std=1.6880
+2026-03-12 02:45:12,702 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:45:12,702 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:45:12,702 - INFO - Updated channel 'humidity': count=400, mean=54.9587, std=6.7394
+2026-03-12 02:45:12,702 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:45:12,702 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:45:12,702 - INFO - Updated channel 'pressure': count=400, mean=1013.1366, std=3.9566
+2026-03-12 02:45:12,703 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:45:12,703 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:45:12,703 - INFO - Updated channel 'wind_speed': count=400, mean=10.1025, std=3.2847
+2026-03-12 02:45:12,860 - INFO - Anomaly detection completed successfully
+2026-03-12 02:45:12,891 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024511.csv
+2026-03-12 02:45:12,919 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:45:12,947 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:45:12,947 - INFO - Updated baseline saved to S3
+2026-03-12 02:45:12,975 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024511_summary.json
+2026-03-12 02:45:12,975 - INFO - Processing complete: 7/100 rows flagged as anomalies
+2026-03-12 02:46:12,507 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:46:12,507 - INFO - Notification contains 1 record(s)
+2026-03-12 02:46:12,507 - INFO - New file detected: raw/sensors_20260312T024611.csv
+2026-03-12 02:46:12,508 - INFO - Queueing background processing for file: raw/sensors_20260312T024611.csv
+2026-03-12 02:46:12,509 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024611.csv
+2026-03-12 02:46:12,577 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024611.csv
+2026-03-12 02:46:12,577 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:46:12,577 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:46:12,670 - INFO - Baseline loaded successfully
+2026-03-12 02:46:12,670 - INFO - Baseline loaded successfully
+2026-03-12 02:46:12,671 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:46:12,671 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:46:12,671 - INFO - Updated channel 'temperature': count=500, mean=21.9144, std=1.7530
+2026-03-12 02:46:12,671 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:46:12,671 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:46:12,672 - INFO - Updated channel 'humidity': count=500, mean=55.2155, std=6.4273
+2026-03-12 02:46:12,672 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:46:12,672 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:46:12,672 - INFO - Updated channel 'pressure': count=500, mean=1013.1933, std=3.8841
+2026-03-12 02:46:12,672 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:46:12,672 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:46:12,673 - INFO - Updated channel 'wind_speed': count=500, mean=9.9898, std=3.3562
+2026-03-12 02:46:12,831 - INFO - Anomaly detection completed successfully
+2026-03-12 02:46:12,864 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024611.csv
+2026-03-12 02:46:12,896 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:46:12,920 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:46:12,920 - INFO - Updated baseline saved to S3
+2026-03-12 02:46:12,963 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024611_summary.json
+2026-03-12 02:46:12,963 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 02:47:12,786 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:47:12,786 - INFO - Notification contains 1 record(s)
+2026-03-12 02:47:12,786 - INFO - New file detected: raw/sensors_20260312T024712.csv
+2026-03-12 02:47:12,786 - INFO - Queueing background processing for file: raw/sensors_20260312T024712.csv
+2026-03-12 02:47:12,787 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024712.csv
+2026-03-12 02:47:12,931 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024712.csv
+2026-03-12 02:47:12,931 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:47:12,931 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:47:12,999 - WARNING - No existing baseline found in S3; starting with empty baseline
+2026-03-12 02:47:12,999 - INFO - Baseline loaded successfully
+2026-03-12 02:47:13,000 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:47:13,000 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:47:13,000 - INFO - Initialized new baseline channel 'temperature'
+2026-03-12 02:47:13,000 - INFO - Updated channel 'temperature': count=100, mean=22.0838, std=2.6007
+2026-03-12 02:47:13,000 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:47:13,000 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:47:13,000 - INFO - Initialized new baseline channel 'humidity'
+2026-03-12 02:47:13,001 - INFO - Updated channel 'humidity': count=100, mean=54.5161, std=4.9804
+2026-03-12 02:47:13,001 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:47:13,001 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:47:13,001 - INFO - Initialized new baseline channel 'pressure'
+2026-03-12 02:47:13,001 - INFO - Updated channel 'pressure': count=100, mean=1012.5639, std=3.9859
+2026-03-12 02:47:13,002 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:47:13,002 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:47:13,002 - INFO - Initialized new baseline channel 'wind_speed'
+2026-03-12 02:47:13,002 - INFO - Updated channel 'wind_speed': count=100, mean=10.2921, std=2.2863
+2026-03-12 02:47:13,168 - INFO - Anomaly detection completed successfully
+2026-03-12 02:47:13,213 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024712.csv
+2026-03-12 02:47:13,246 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:47:13,309 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:47:13,309 - INFO - Updated baseline saved to S3
+2026-03-12 02:47:13,346 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024712_summary.json
+2026-03-12 02:47:13,346 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 02:48:13,550 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:48:13,550 - INFO - Notification contains 1 record(s)
+2026-03-12 02:48:13,550 - INFO - New file detected: raw/sensors_20260312T024812.csv
+2026-03-12 02:48:13,551 - INFO - Queueing background processing for file: raw/sensors_20260312T024812.csv
+2026-03-12 02:48:13,552 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024812.csv
+2026-03-12 02:48:13,637 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024812.csv
+2026-03-12 02:48:13,637 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:48:13,637 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:48:13,761 - INFO - Baseline loaded successfully
+2026-03-12 02:48:13,761 - INFO - Baseline loaded successfully
+2026-03-12 02:48:13,762 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:48:13,762 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:48:13,762 - INFO - Updated channel 'temperature': count=200, mean=21.9467, std=2.0944
+2026-03-12 02:48:13,762 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:48:13,762 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:48:13,763 - INFO - Updated channel 'humidity': count=200, mean=54.3598, std=5.0119
+2026-03-12 02:48:13,763 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:48:13,763 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:48:13,763 - INFO - Updated channel 'pressure': count=200, mean=1012.9105, std=4.5959
+2026-03-12 02:48:13,763 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:48:13,764 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:48:13,764 - INFO - Updated channel 'wind_speed': count=200, mean=10.2543, std=2.6899
+2026-03-12 02:48:13,922 - INFO - Anomaly detection completed successfully
+2026-03-12 02:48:13,959 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024812.csv
+2026-03-12 02:48:13,991 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:48:14,025 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:48:14,025 - INFO - Updated baseline saved to S3
+2026-03-12 02:48:14,064 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024812_summary.json
+2026-03-12 02:48:14,064 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 02:49:14,925 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:49:14,925 - INFO - Notification contains 1 record(s)
+2026-03-12 02:49:14,926 - INFO - New file detected: raw/sensors_20260312T024912.csv
+2026-03-12 02:49:14,926 - INFO - Queueing background processing for file: raw/sensors_20260312T024912.csv
+2026-03-12 02:49:14,927 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024912.csv
+2026-03-12 02:49:15,001 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T024912.csv
+2026-03-12 02:49:15,002 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:49:15,002 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:49:15,078 - INFO - Baseline loaded successfully
+2026-03-12 02:49:15,078 - INFO - Baseline loaded successfully
+2026-03-12 02:49:15,078 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:49:15,079 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:49:15,079 - INFO - Updated channel 'temperature': count=300, mean=21.9398, std=1.8798
+2026-03-12 02:49:15,079 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:49:15,079 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:49:15,079 - INFO - Updated channel 'humidity': count=300, mean=54.8450, std=5.8463
+2026-03-12 02:49:15,080 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:49:15,080 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:49:15,080 - INFO - Updated channel 'pressure': count=300, mean=1012.8874, std=4.1568
+2026-03-12 02:49:15,080 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:49:15,080 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:49:15,080 - INFO - Updated channel 'wind_speed': count=300, mean=10.0772, std=2.8345
+2026-03-12 02:49:15,241 - INFO - Anomaly detection completed successfully
+2026-03-12 02:49:15,285 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024912.csv
+2026-03-12 02:49:15,312 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:49:15,341 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:49:15,341 - INFO - Updated baseline saved to S3
+2026-03-12 02:49:15,372 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T024912_summary.json
+2026-03-12 02:49:15,373 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 02:50:14,539 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:50:14,539 - INFO - Notification contains 1 record(s)
+2026-03-12 02:50:14,539 - INFO - New file detected: raw/sensors_20260312T025013.csv
+2026-03-12 02:50:14,539 - INFO - Queueing background processing for file: raw/sensors_20260312T025013.csv
+2026-03-12 02:50:14,540 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025013.csv
+2026-03-12 02:50:14,616 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025013.csv
+2026-03-12 02:50:14,616 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:50:14,616 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:50:14,686 - INFO - Baseline loaded successfully
+2026-03-12 02:50:14,686 - INFO - Baseline loaded successfully
+2026-03-12 02:50:14,687 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:50:14,687 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:50:14,687 - INFO - Updated channel 'temperature': count=400, mean=21.9830, std=1.9755
+2026-03-12 02:50:14,687 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:50:14,687 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:50:14,688 - INFO - Updated channel 'humidity': count=400, mean=54.8598, std=5.5004
+2026-03-12 02:50:14,688 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:50:14,688 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:50:14,688 - INFO - Updated channel 'pressure': count=400, mean=1012.8227, std=4.2732
+2026-03-12 02:50:14,688 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:50:14,688 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:50:14,689 - INFO - Updated channel 'wind_speed': count=400, mean=9.8899, std=2.9987
+2026-03-12 02:50:14,847 - INFO - Anomaly detection completed successfully
+2026-03-12 02:50:14,894 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025013.csv
+2026-03-12 02:50:14,925 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:50:14,957 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:50:14,957 - INFO - Updated baseline saved to S3
+2026-03-12 02:50:15,005 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025013_summary.json
+2026-03-12 02:50:15,005 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 02:51:15,104 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:51:15,104 - INFO - Notification contains 1 record(s)
+2026-03-12 02:51:15,104 - INFO - New file detected: raw/sensors_20260312T025113.csv
+2026-03-12 02:51:15,104 - INFO - Queueing background processing for file: raw/sensors_20260312T025113.csv
+2026-03-12 02:51:15,105 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025113.csv
+2026-03-12 02:51:15,178 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025113.csv
+2026-03-12 02:51:15,179 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:51:15,179 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:51:15,301 - INFO - Baseline loaded successfully
+2026-03-12 02:51:15,301 - INFO - Baseline loaded successfully
+2026-03-12 02:51:15,302 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:51:15,302 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:51:15,302 - INFO - Updated channel 'temperature': count=500, mean=22.0045, std=1.8677
+2026-03-12 02:51:15,303 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:51:15,303 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:51:15,303 - INFO - Updated channel 'humidity': count=500, mean=54.6568, std=6.0732
+2026-03-12 02:51:15,303 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:51:15,303 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:51:15,303 - INFO - Updated channel 'pressure': count=500, mean=1012.9454, std=4.3041
+2026-03-12 02:51:15,304 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:51:15,304 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:51:15,304 - INFO - Updated channel 'wind_speed': count=500, mean=9.8965, std=2.9121
+2026-03-12 02:51:15,466 - INFO - Anomaly detection completed successfully
+2026-03-12 02:51:15,501 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025113.csv
+2026-03-12 02:51:15,529 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:51:15,559 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:51:15,560 - INFO - Updated baseline saved to S3
+2026-03-12 02:51:15,591 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025113_summary.json
+2026-03-12 02:51:15,591 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 02:52:14,948 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:52:14,948 - INFO - Notification contains 1 record(s)
+2026-03-12 02:52:14,948 - INFO - New file detected: raw/sensors_20260312T025214.csv
+2026-03-12 02:52:14,948 - INFO - Queueing background processing for file: raw/sensors_20260312T025214.csv
+2026-03-12 02:52:14,950 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025214.csv
+2026-03-12 02:52:15,025 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025214.csv
+2026-03-12 02:52:15,025 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:52:15,026 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:52:15,178 - INFO - Baseline loaded successfully
+2026-03-12 02:52:15,178 - INFO - Baseline loaded successfully
+2026-03-12 02:52:15,178 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:52:15,178 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:52:15,179 - INFO - Updated channel 'temperature': count=600, mean=21.9974, std=1.8095
+2026-03-12 02:52:15,179 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:52:15,179 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:52:15,179 - INFO - Updated channel 'humidity': count=600, mean=54.6736, std=6.0875
+2026-03-12 02:52:15,180 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:52:15,180 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:52:15,180 - INFO - Updated channel 'pressure': count=600, mean=1012.8963, std=4.2700
+2026-03-12 02:52:15,180 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:52:15,180 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:52:15,180 - INFO - Updated channel 'wind_speed': count=600, mean=9.9225, std=2.9567
+2026-03-12 02:52:15,340 - INFO - Anomaly detection completed successfully
+2026-03-12 02:52:15,372 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025214.csv
+2026-03-12 02:52:15,412 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:52:15,458 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:52:15,458 - INFO - Updated baseline saved to S3
+2026-03-12 02:52:15,486 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025214_summary.json
+2026-03-12 02:52:15,486 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 02:53:15,359 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:53:15,359 - INFO - Notification contains 1 record(s)
+2026-03-12 02:53:15,359 - INFO - New file detected: raw/sensors_20260312T025314.csv
+2026-03-12 02:53:15,359 - INFO - Queueing background processing for file: raw/sensors_20260312T025314.csv
+2026-03-12 02:53:15,361 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025314.csv
+2026-03-12 02:53:15,445 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025314.csv
+2026-03-12 02:53:15,445 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:53:15,445 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:53:15,527 - INFO - Baseline loaded successfully
+2026-03-12 02:53:15,527 - INFO - Baseline loaded successfully
+2026-03-12 02:53:15,527 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:53:15,528 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:53:15,528 - INFO - Updated channel 'temperature': count=700, mean=21.9967, std=1.8105
+2026-03-12 02:53:15,528 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:53:15,528 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:53:15,528 - INFO - Updated channel 'humidity': count=700, mean=54.7692, std=6.0890
+2026-03-12 02:53:15,529 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:53:15,529 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:53:15,529 - INFO - Updated channel 'pressure': count=700, mean=1012.8515, std=4.2440
+2026-03-12 02:53:15,529 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:53:15,529 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:53:15,530 - INFO - Updated channel 'wind_speed': count=700, mean=9.9215, std=2.9057
+2026-03-12 02:53:15,689 - INFO - Anomaly detection completed successfully
+2026-03-12 02:53:15,720 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025314.csv
+2026-03-12 02:53:15,750 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:53:15,842 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:53:15,842 - INFO - Updated baseline saved to S3
+2026-03-12 02:53:15,900 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025314_summary.json
+2026-03-12 02:53:15,900 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 02:54:15,918 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:54:15,919 - INFO - Notification contains 1 record(s)
+2026-03-12 02:54:15,919 - INFO - New file detected: raw/sensors_20260312T025414.csv
+2026-03-12 02:54:15,919 - INFO - Queueing background processing for file: raw/sensors_20260312T025414.csv
+2026-03-12 02:54:15,922 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025414.csv
+2026-03-12 02:54:16,004 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025414.csv
+2026-03-12 02:54:16,004 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:54:16,004 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:54:16,113 - INFO - Baseline loaded successfully
+2026-03-12 02:54:16,113 - INFO - Baseline loaded successfully
+2026-03-12 02:54:16,113 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:54:16,113 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:54:16,114 - INFO - Updated channel 'temperature': count=800, mean=21.9972, std=1.7994
+2026-03-12 02:54:16,114 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:54:16,114 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:54:16,114 - INFO - Updated channel 'humidity': count=800, mean=54.7822, std=5.9806
+2026-03-12 02:54:16,115 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:54:16,115 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:54:16,115 - INFO - Updated channel 'pressure': count=800, mean=1012.8622, std=4.2407
+2026-03-12 02:54:16,115 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:54:16,115 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:54:16,115 - INFO - Updated channel 'wind_speed': count=800, mean=9.8968, std=2.9506
+2026-03-12 02:54:16,274 - INFO - Anomaly detection completed successfully
+2026-03-12 02:54:16,308 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025414.csv
+2026-03-12 02:54:16,343 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:54:16,376 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:54:16,376 - INFO - Updated baseline saved to S3
+2026-03-12 02:54:16,421 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025414_summary.json
+2026-03-12 02:54:16,421 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 02:55:16,572 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:55:16,572 - INFO - Notification contains 1 record(s)
+2026-03-12 02:55:16,572 - INFO - New file detected: raw/sensors_20260312T025514.csv
+2026-03-12 02:55:16,572 - INFO - Queueing background processing for file: raw/sensors_20260312T025514.csv
+2026-03-12 02:55:16,573 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025514.csv
+2026-03-12 02:55:16,645 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025514.csv
+2026-03-12 02:55:16,645 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:55:16,645 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:55:16,759 - INFO - Baseline loaded successfully
+2026-03-12 02:55:16,759 - INFO - Baseline loaded successfully
+2026-03-12 02:55:16,759 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:55:16,759 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:55:16,760 - INFO - Updated channel 'temperature': count=900, mean=22.0130, std=1.7784
+2026-03-12 02:55:16,760 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:55:16,760 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:55:16,760 - INFO - Updated channel 'humidity': count=900, mean=54.7457, std=6.3261
+2026-03-12 02:55:16,760 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:55:16,760 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:55:16,761 - INFO - Updated channel 'pressure': count=900, mean=1012.8683, std=4.1573
+2026-03-12 02:55:16,761 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:55:16,761 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:55:16,761 - INFO - Updated channel 'wind_speed': count=900, mean=9.9520, std=2.9344
+2026-03-12 02:55:16,920 - INFO - Anomaly detection completed successfully
+2026-03-12 02:55:16,953 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025514.csv
+2026-03-12 02:55:16,987 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:55:17,019 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:55:17,019 - INFO - Updated baseline saved to S3
+2026-03-12 02:55:17,046 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025514_summary.json
+2026-03-12 02:55:17,046 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 02:56:16,357 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:56:16,358 - INFO - Notification contains 1 record(s)
+2026-03-12 02:56:16,358 - INFO - New file detected: raw/sensors_20260312T025615.csv
+2026-03-12 02:56:16,358 - INFO - Queueing background processing for file: raw/sensors_20260312T025615.csv
+2026-03-12 02:56:16,360 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025615.csv
+2026-03-12 02:56:16,430 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025615.csv
+2026-03-12 02:56:16,431 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:56:16,431 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:56:16,505 - INFO - Baseline loaded successfully
+2026-03-12 02:56:16,505 - INFO - Baseline loaded successfully
+2026-03-12 02:56:16,506 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:56:16,506 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:56:16,506 - INFO - Updated channel 'temperature': count=1000, mean=22.0037, std=1.7536
+2026-03-12 02:56:16,507 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:56:16,507 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:56:16,507 - INFO - Updated channel 'humidity': count=1000, mean=54.7715, std=6.3796
+2026-03-12 02:56:16,507 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:56:16,507 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:56:16,507 - INFO - Updated channel 'pressure': count=1000, mean=1012.9012, std=4.1190
+2026-03-12 02:56:16,508 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:56:16,508 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:56:16,508 - INFO - Updated channel 'wind_speed': count=1000, mean=9.9156, std=3.0300
+2026-03-12 02:56:16,666 - INFO - Anomaly detection completed successfully
+2026-03-12 02:56:16,715 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025615.csv
+2026-03-12 02:56:16,746 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:56:16,774 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:56:16,774 - INFO - Updated baseline saved to S3
+2026-03-12 02:56:16,804 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025615_summary.json
+2026-03-12 02:56:16,804 - INFO - Processing complete: 7/100 rows flagged as anomalies
+2026-03-12 02:57:16,767 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:57:16,767 - INFO - Notification contains 1 record(s)
+2026-03-12 02:57:16,767 - INFO - New file detected: raw/sensors_20260312T025715.csv
+2026-03-12 02:57:16,767 - INFO - Queueing background processing for file: raw/sensors_20260312T025715.csv
+2026-03-12 02:57:16,769 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025715.csv
+2026-03-12 02:57:16,841 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025715.csv
+2026-03-12 02:57:16,841 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:57:16,841 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:57:16,913 - INFO - Baseline loaded successfully
+2026-03-12 02:57:16,914 - INFO - Baseline loaded successfully
+2026-03-12 02:57:16,914 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:57:16,914 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:57:16,914 - INFO - Updated channel 'temperature': count=1100, mean=22.0168, std=1.8344
+2026-03-12 02:57:16,915 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:57:16,915 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:57:16,915 - INFO - Updated channel 'humidity': count=1100, mean=54.8133, std=6.3744
+2026-03-12 02:57:16,915 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:57:16,915 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:57:16,916 - INFO - Updated channel 'pressure': count=1100, mean=1012.9568, std=4.0123
+2026-03-12 02:57:16,916 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:57:16,916 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:57:16,916 - INFO - Updated channel 'wind_speed': count=1100, mean=9.8737, std=3.0229
+2026-03-12 02:57:17,075 - INFO - Anomaly detection completed successfully
+2026-03-12 02:57:17,108 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025715.csv
+2026-03-12 02:57:17,137 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:57:17,167 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:57:17,167 - INFO - Updated baseline saved to S3
+2026-03-12 02:57:17,198 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025715_summary.json
+2026-03-12 02:57:17,198 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 02:58:16,533 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:58:16,533 - INFO - Notification contains 1 record(s)
+2026-03-12 02:58:16,533 - INFO - New file detected: raw/sensors_20260312T025815.csv
+2026-03-12 02:58:16,533 - INFO - Queueing background processing for file: raw/sensors_20260312T025815.csv
+2026-03-12 02:58:16,534 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025815.csv
+2026-03-12 02:58:16,608 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025815.csv
+2026-03-12 02:58:16,609 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:58:16,609 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:58:16,698 - INFO - Baseline loaded successfully
+2026-03-12 02:58:16,699 - INFO - Baseline loaded successfully
+2026-03-12 02:58:16,699 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:58:16,699 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:58:16,699 - INFO - Updated channel 'temperature': count=1200, mean=21.9974, std=1.8388
+2026-03-12 02:58:16,700 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:58:16,700 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:58:16,700 - INFO - Updated channel 'humidity': count=1200, mean=54.8239, std=6.2387
+2026-03-12 02:58:16,700 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:58:16,700 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:58:16,701 - INFO - Updated channel 'pressure': count=1200, mean=1012.9096, std=4.0101
+2026-03-12 02:58:16,701 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:58:16,701 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:58:16,701 - INFO - Updated channel 'wind_speed': count=1200, mean=9.8743, std=3.0995
+2026-03-12 02:58:16,860 - INFO - Anomaly detection completed successfully
+2026-03-12 02:58:16,890 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025815.csv
+2026-03-12 02:58:16,923 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:58:16,952 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:58:16,952 - INFO - Updated baseline saved to S3
+2026-03-12 02:58:16,983 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025815_summary.json
+2026-03-12 02:58:16,983 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 02:59:17,090 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 02:59:17,090 - INFO - Notification contains 1 record(s)
+2026-03-12 02:59:17,090 - INFO - New file detected: raw/sensors_20260312T025915.csv
+2026-03-12 02:59:17,090 - INFO - Queueing background processing for file: raw/sensors_20260312T025915.csv
+2026-03-12 02:59:17,091 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025915.csv
+2026-03-12 02:59:17,167 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T025915.csv
+2026-03-12 02:59:17,167 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 02:59:17,167 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:59:17,240 - INFO - Baseline loaded successfully
+2026-03-12 02:59:17,240 - INFO - Baseline loaded successfully
+2026-03-12 02:59:17,240 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 02:59:17,241 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 02:59:17,241 - INFO - Updated channel 'temperature': count=1300, mean=22.0174, std=1.8536
+2026-03-12 02:59:17,241 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 02:59:17,241 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 02:59:17,242 - INFO - Updated channel 'humidity': count=1300, mean=54.7972, std=6.2944
+2026-03-12 02:59:17,242 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 02:59:17,242 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 02:59:17,242 - INFO - Updated channel 'pressure': count=1300, mean=1012.8833, std=4.0333
+2026-03-12 02:59:17,242 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 02:59:17,242 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 02:59:17,243 - INFO - Updated channel 'wind_speed': count=1300, mean=9.8972, std=3.0817
+2026-03-12 02:59:17,402 - INFO - Anomaly detection completed successfully
+2026-03-12 02:59:17,440 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025915.csv
+2026-03-12 02:59:17,472 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 02:59:17,521 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 02:59:17,521 - INFO - Updated baseline saved to S3
+2026-03-12 02:59:17,558 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T025915_summary.json
+2026-03-12 02:59:17,558 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:00:16,944 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:00:16,944 - INFO - Notification contains 1 record(s)
+2026-03-12 03:00:16,945 - INFO - New file detected: raw/sensors_20260312T030015.csv
+2026-03-12 03:00:16,945 - INFO - Queueing background processing for file: raw/sensors_20260312T030015.csv
+2026-03-12 03:00:16,946 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030015.csv
+2026-03-12 03:00:17,018 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030015.csv
+2026-03-12 03:00:17,018 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:00:17,018 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:00:17,121 - INFO - Baseline loaded successfully
+2026-03-12 03:00:17,121 - INFO - Baseline loaded successfully
+2026-03-12 03:00:17,122 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:00:17,122 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:00:17,122 - INFO - Updated channel 'temperature': count=1400, mean=22.0156, std=1.8307
+2026-03-12 03:00:17,123 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:00:17,123 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:00:17,123 - INFO - Updated channel 'humidity': count=1400, mean=54.7526, std=6.2462
+2026-03-12 03:00:17,123 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:00:17,123 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:00:17,123 - INFO - Updated channel 'pressure': count=1400, mean=1012.8993, std=4.0665
+2026-03-12 03:00:17,124 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:00:17,124 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:00:17,124 - INFO - Updated channel 'wind_speed': count=1400, mean=9.9248, std=3.1056
+2026-03-12 03:00:17,282 - INFO - Anomaly detection completed successfully
+2026-03-12 03:00:17,348 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030015.csv
+2026-03-12 03:00:17,384 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:00:17,417 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:00:17,417 - INFO - Updated baseline saved to S3
+2026-03-12 03:00:17,451 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030015_summary.json
+2026-03-12 03:00:17,451 - INFO - Processing complete: 7/100 rows flagged as anomalies
+2026-03-12 03:01:17,406 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:01:17,406 - INFO - Notification contains 1 record(s)
+2026-03-12 03:01:17,407 - INFO - New file detected: raw/sensors_20260312T030116.csv
+2026-03-12 03:01:17,408 - INFO - Queueing background processing for file: raw/sensors_20260312T030116.csv
+2026-03-12 03:01:17,409 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030116.csv
+2026-03-12 03:01:17,488 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030116.csv
+2026-03-12 03:01:17,488 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:01:17,488 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:01:17,563 - INFO - Baseline loaded successfully
+2026-03-12 03:01:17,563 - INFO - Baseline loaded successfully
+2026-03-12 03:01:17,563 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:01:17,564 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:01:17,564 - INFO - Updated channel 'temperature': count=1500, mean=22.0052, std=1.8342
+2026-03-12 03:01:17,564 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:01:17,564 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:01:17,564 - INFO - Updated channel 'humidity': count=1500, mean=54.8119, std=6.1587
+2026-03-12 03:01:17,565 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:01:17,565 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:01:17,565 - INFO - Updated channel 'pressure': count=1500, mean=1012.9385, std=4.0838
+2026-03-12 03:01:17,565 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:01:17,565 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:01:17,566 - INFO - Updated channel 'wind_speed': count=1500, mean=9.9165, std=3.1152
+2026-03-12 03:01:17,725 - INFO - Anomaly detection completed successfully
+2026-03-12 03:01:17,759 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030116.csv
+2026-03-12 03:01:17,791 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:01:17,826 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:01:17,826 - INFO - Updated baseline saved to S3
+2026-03-12 03:01:17,899 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030116_summary.json
+2026-03-12 03:01:17,899 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:02:17,173 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:02:17,173 - INFO - Notification contains 1 record(s)
+2026-03-12 03:02:17,173 - INFO - New file detected: raw/sensors_20260312T030216.csv
+2026-03-12 03:02:17,173 - INFO - Queueing background processing for file: raw/sensors_20260312T030216.csv
+2026-03-12 03:02:17,175 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030216.csv
+2026-03-12 03:02:17,249 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030216.csv
+2026-03-12 03:02:17,249 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:02:17,250 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:02:17,370 - INFO - Baseline loaded successfully
+2026-03-12 03:02:17,370 - INFO - Baseline loaded successfully
+2026-03-12 03:02:17,371 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:02:17,371 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:02:17,371 - INFO - Updated channel 'temperature': count=1600, mean=22.0031, std=1.8475
+2026-03-12 03:02:17,371 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:02:17,371 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:02:17,371 - INFO - Updated channel 'humidity': count=1600, mean=54.8597, std=6.2469
+2026-03-12 03:02:17,372 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:02:17,372 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:02:17,372 - INFO - Updated channel 'pressure': count=1600, mean=1012.8740, std=4.0606
+2026-03-12 03:02:17,372 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:02:17,372 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:02:17,372 - INFO - Updated channel 'wind_speed': count=1600, mean=9.8986, std=3.0864
+2026-03-12 03:02:17,533 - INFO - Anomaly detection completed successfully
+2026-03-12 03:02:17,569 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030216.csv
+2026-03-12 03:02:17,617 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:02:17,667 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:02:17,667 - INFO - Updated baseline saved to S3
+2026-03-12 03:02:17,702 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030216_summary.json
+2026-03-12 03:02:17,703 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:03:17,620 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:03:17,621 - INFO - Notification contains 1 record(s)
+2026-03-12 03:03:17,621 - INFO - New file detected: raw/sensors_20260312T030316.csv
+2026-03-12 03:03:17,621 - INFO - Queueing background processing for file: raw/sensors_20260312T030316.csv
+2026-03-12 03:03:17,622 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030316.csv
+2026-03-12 03:03:17,698 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030316.csv
+2026-03-12 03:03:17,698 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:03:17,699 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:03:17,836 - INFO - Baseline loaded successfully
+2026-03-12 03:03:17,836 - INFO - Baseline loaded successfully
+2026-03-12 03:03:17,836 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:03:17,837 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:03:17,837 - INFO - Updated channel 'temperature': count=1700, mean=22.0041, std=1.8439
+2026-03-12 03:03:17,837 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:03:17,837 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:03:17,837 - INFO - Updated channel 'humidity': count=1700, mean=54.8518, std=6.3319
+2026-03-12 03:03:17,838 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:03:17,838 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:03:17,838 - INFO - Updated channel 'pressure': count=1700, mean=1012.9076, std=4.0600
+2026-03-12 03:03:17,838 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:03:17,838 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:03:17,839 - INFO - Updated channel 'wind_speed': count=1700, mean=9.8969, std=3.0580
+2026-03-12 03:03:17,997 - INFO - Anomaly detection completed successfully
+2026-03-12 03:03:18,054 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030316.csv
+2026-03-12 03:03:18,082 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:03:18,113 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:03:18,113 - INFO - Updated baseline saved to S3
+2026-03-12 03:03:18,159 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030316_summary.json
+2026-03-12 03:03:18,159 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 03:04:18,153 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:04:18,153 - INFO - Notification contains 1 record(s)
+2026-03-12 03:04:18,153 - INFO - New file detected: raw/sensors_20260312T030416.csv
+2026-03-12 03:04:18,153 - INFO - Queueing background processing for file: raw/sensors_20260312T030416.csv
+2026-03-12 03:04:18,154 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030416.csv
+2026-03-12 03:04:18,228 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030416.csv
+2026-03-12 03:04:18,228 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:04:18,228 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:04:18,302 - INFO - Baseline loaded successfully
+2026-03-12 03:04:18,302 - INFO - Baseline loaded successfully
+2026-03-12 03:04:18,303 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:04:18,303 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:04:18,303 - INFO - Updated channel 'temperature': count=1800, mean=21.9953, std=1.8346
+2026-03-12 03:04:18,303 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:04:18,304 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:04:18,304 - INFO - Updated channel 'humidity': count=1800, mean=54.8941, std=6.2853
+2026-03-12 03:04:18,304 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:04:18,304 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:04:18,304 - INFO - Updated channel 'pressure': count=1800, mean=1012.9008, std=4.0690
+2026-03-12 03:04:18,305 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:04:18,305 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:04:18,305 - INFO - Updated channel 'wind_speed': count=1800, mean=9.9218, std=3.0846
+2026-03-12 03:04:18,464 - INFO - Anomaly detection completed successfully
+2026-03-12 03:04:18,494 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030416.csv
+2026-03-12 03:04:18,526 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:04:18,575 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:04:18,575 - INFO - Updated baseline saved to S3
+2026-03-12 03:04:18,602 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030416_summary.json
+2026-03-12 03:04:18,602 - INFO - Processing complete: 7/100 rows flagged as anomalies
+2026-03-12 03:05:18,032 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:05:18,032 - INFO - Notification contains 1 record(s)
+2026-03-12 03:05:18,032 - INFO - New file detected: raw/sensors_20260312T030516.csv
+2026-03-12 03:05:18,032 - INFO - Queueing background processing for file: raw/sensors_20260312T030516.csv
+2026-03-12 03:05:18,033 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030516.csv
+2026-03-12 03:05:18,109 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030516.csv
+2026-03-12 03:05:18,109 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:05:18,109 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:05:18,184 - INFO - Baseline loaded successfully
+2026-03-12 03:05:18,184 - INFO - Baseline loaded successfully
+2026-03-12 03:05:18,184 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:05:18,184 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:05:18,185 - INFO - Updated channel 'temperature': count=1900, mean=22.0148, std=1.8341
+2026-03-12 03:05:18,185 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:05:18,185 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:05:18,185 - INFO - Updated channel 'humidity': count=1900, mean=54.8906, std=6.2671
+2026-03-12 03:05:18,186 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:05:18,186 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:05:18,186 - INFO - Updated channel 'pressure': count=1900, mean=1012.9218, std=4.0220
+2026-03-12 03:05:18,186 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:05:18,186 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:05:18,186 - INFO - Updated channel 'wind_speed': count=1900, mean=9.9397, std=3.1079
+2026-03-12 03:05:18,345 - INFO - Anomaly detection completed successfully
+2026-03-12 03:05:18,386 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030516.csv
+2026-03-12 03:05:18,411 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:05:18,436 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:05:18,436 - INFO - Updated baseline saved to S3
+2026-03-12 03:05:18,485 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030516_summary.json
+2026-03-12 03:05:18,485 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:06:18,427 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:06:18,427 - INFO - Notification contains 1 record(s)
+2026-03-12 03:06:18,428 - INFO - New file detected: raw/sensors_20260312T030617.csv
+2026-03-12 03:06:18,429 - INFO - Queueing background processing for file: raw/sensors_20260312T030617.csv
+2026-03-12 03:06:18,430 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030617.csv
+2026-03-12 03:06:18,508 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T030617.csv
+2026-03-12 03:06:18,509 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:06:18,509 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:06:18,605 - INFO - Baseline loaded successfully
+2026-03-12 03:06:18,606 - INFO - Baseline loaded successfully
+2026-03-12 03:06:18,606 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:06:18,606 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:06:18,606 - INFO - Updated channel 'temperature': count=2000, mean=22.0063, std=1.8312
+2026-03-12 03:06:18,607 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:06:18,607 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:06:18,607 - INFO - Updated channel 'humidity': count=2000, mean=54.8735, std=6.2197
+2026-03-12 03:06:18,607 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:06:18,607 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:06:18,608 - INFO - Updated channel 'pressure': count=2000, mean=1012.9388, std=4.0115
+2026-03-12 03:06:18,608 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:06:18,608 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:06:18,608 - INFO - Updated channel 'wind_speed': count=2000, mean=9.9412, std=3.1233
+2026-03-12 03:06:18,766 - INFO - Anomaly detection completed successfully
+2026-03-12 03:06:18,852 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030617.csv
+2026-03-12 03:06:18,878 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:06:18,964 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:06:18,964 - INFO - Updated baseline saved to S3
+2026-03-12 03:06:18,997 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T030617_summary.json
+2026-03-12 03:06:18,997 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:15:01,255 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:15:01,255 - INFO - Notification contains 1 record(s)
+2026-03-12 03:15:01,255 - INFO - New file detected: raw/sensors_20260312T031500.csv
+2026-03-12 03:15:01,255 - INFO - Queueing background processing for file: raw/sensors_20260312T031500.csv
+2026-03-12 03:15:01,257 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T031500.csv
+2026-03-12 03:15:01,426 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T031500.csv
+2026-03-12 03:15:01,426 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:15:01,426 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:15:01,591 - INFO - Baseline loaded successfully
+2026-03-12 03:15:01,591 - INFO - Baseline loaded successfully
+2026-03-12 03:15:01,591 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:15:01,591 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:15:01,592 - INFO - Updated channel 'temperature': count=2100, mean=22.0160, std=1.8453
+2026-03-12 03:15:01,592 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:15:01,592 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:15:01,592 - INFO - Updated channel 'humidity': count=2100, mean=54.8712, std=6.1892
+2026-03-12 03:15:01,601 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:15:01,601 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:15:01,601 - INFO - Updated channel 'pressure': count=2100, mean=1012.9326, std=4.0082
+2026-03-12 03:15:01,602 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:15:01,602 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:15:01,602 - INFO - Updated channel 'wind_speed': count=2100, mean=9.9556, std=3.1289
+2026-03-12 03:15:01,933 - INFO - Anomaly detection completed successfully
+2026-03-12 03:15:01,973 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T031500.csv
+2026-03-12 03:15:01,999 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:15:02,041 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:15:02,042 - INFO - Updated baseline saved to S3
+2026-03-12 03:15:02,091 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T031500_summary.json
+2026-03-12 03:15:02,091 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:16:01,913 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:16:01,913 - INFO - Notification contains 1 record(s)
+2026-03-12 03:16:01,913 - INFO - New file detected: raw/sensors_20260312T031600.csv
+2026-03-12 03:16:01,913 - INFO - Queueing background processing for file: raw/sensors_20260312T031600.csv
+2026-03-12 03:16:01,915 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T031600.csv
+2026-03-12 03:16:02,007 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T031600.csv
+2026-03-12 03:16:02,007 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:16:02,008 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:16:02,179 - INFO - Baseline loaded successfully
+2026-03-12 03:16:02,179 - INFO - Baseline loaded successfully
+2026-03-12 03:16:02,180 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:16:02,180 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:16:02,180 - INFO - Updated channel 'temperature': count=2200, mean=22.0013, std=1.8407
+2026-03-12 03:16:02,181 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:16:02,181 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:16:02,181 - INFO - Updated channel 'humidity': count=2200, mean=54.8610, std=6.3013
+2026-03-12 03:16:02,184 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:16:02,184 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:16:02,184 - INFO - Updated channel 'pressure': count=2200, mean=1012.9238, std=3.9895
+2026-03-12 03:16:02,185 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:16:02,185 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:16:02,185 - INFO - Updated channel 'wind_speed': count=2200, mean=9.9743, std=3.1144
+2026-03-12 03:16:02,406 - INFO - Anomaly detection completed successfully
+2026-03-12 03:16:02,439 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T031600.csv
+2026-03-12 03:16:02,473 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:16:02,514 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:16:02,514 - INFO - Updated baseline saved to S3
+2026-03-12 03:16:02,551 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T031600_summary.json
+2026-03-12 03:16:02,551 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:17:02,318 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:17:02,319 - INFO - Notification contains 1 record(s)
+2026-03-12 03:17:02,319 - INFO - New file detected: raw/sensors_20260312T031701.csv
+2026-03-12 03:17:02,319 - INFO - Queueing background processing for file: raw/sensors_20260312T031701.csv
+2026-03-12 03:17:02,325 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T031701.csv
+2026-03-12 03:17:02,443 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T031701.csv
+2026-03-12 03:17:02,443 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:17:02,443 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:17:02,545 - INFO - Baseline loaded successfully
+2026-03-12 03:17:02,546 - INFO - Baseline loaded successfully
+2026-03-12 03:17:02,546 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:17:02,546 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:17:02,547 - INFO - Updated channel 'temperature': count=2300, mean=22.0034, std=1.8282
+2026-03-12 03:17:02,547 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:17:02,547 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:17:02,547 - INFO - Updated channel 'humidity': count=2300, mean=54.8474, std=6.3067
+2026-03-12 03:17:02,548 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:17:02,548 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:17:02,548 - INFO - Updated channel 'pressure': count=2300, mean=1012.9102, std=3.9566
+2026-03-12 03:17:02,548 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:17:02,548 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:17:02,548 - INFO - Updated channel 'wind_speed': count=2300, mean=9.9869, std=3.0912
+2026-03-12 03:17:02,739 - INFO - Anomaly detection completed successfully
+2026-03-12 03:17:02,774 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T031701.csv
+2026-03-12 03:17:02,803 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:17:02,847 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:17:02,847 - INFO - Updated baseline saved to S3
+2026-03-12 03:17:02,881 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T031701_summary.json
+2026-03-12 03:17:02,881 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:18:02,093 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:18:02,094 - INFO - Notification contains 1 record(s)
+2026-03-12 03:18:02,094 - INFO - New file detected: raw/sensors_20260312T031801.csv
+2026-03-12 03:18:02,094 - INFO - Queueing background processing for file: raw/sensors_20260312T031801.csv
+2026-03-12 03:18:02,095 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T031801.csv
+2026-03-12 03:18:02,290 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T031801.csv
+2026-03-12 03:18:02,290 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:18:02,290 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:18:02,458 - INFO - Baseline loaded successfully
+2026-03-12 03:18:02,458 - INFO - Baseline loaded successfully
+2026-03-12 03:18:02,459 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:18:02,459 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:18:02,459 - INFO - Updated channel 'temperature': count=2400, mean=21.9913, std=1.8242
+2026-03-12 03:18:02,460 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:18:02,460 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:18:02,461 - INFO - Updated channel 'humidity': count=2400, mean=54.8836, std=6.3311
+2026-03-12 03:18:02,467 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:18:02,467 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:18:02,467 - INFO - Updated channel 'pressure': count=2400, mean=1012.8876, std=3.9509
+2026-03-12 03:18:02,467 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:18:02,467 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:18:02,468 - INFO - Updated channel 'wind_speed': count=2400, mean=10.0021, std=3.0869
+2026-03-12 03:18:02,817 - INFO - Anomaly detection completed successfully
+2026-03-12 03:18:02,851 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T031801.csv
+2026-03-12 03:18:02,887 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:18:02,933 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:18:02,933 - INFO - Updated baseline saved to S3
+2026-03-12 03:18:02,972 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T031801_summary.json
+2026-03-12 03:18:02,973 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:19:02,950 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:19:02,950 - INFO - Notification contains 1 record(s)
+2026-03-12 03:19:02,950 - INFO - New file detected: raw/sensors_20260312T031901.csv
+2026-03-12 03:19:02,951 - INFO - Queueing background processing for file: raw/sensors_20260312T031901.csv
+2026-03-12 03:19:02,952 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T031901.csv
+2026-03-12 03:19:03,028 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T031901.csv
+2026-03-12 03:19:03,028 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:19:03,028 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:19:03,151 - INFO - Baseline loaded successfully
+2026-03-12 03:19:03,152 - INFO - Baseline loaded successfully
+2026-03-12 03:19:03,152 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:19:03,152 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:19:03,152 - INFO - Updated channel 'temperature': count=2500, mean=21.9983, std=1.8782
+2026-03-12 03:19:03,153 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:19:03,153 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:19:03,153 - INFO - Updated channel 'humidity': count=2500, mean=54.8610, std=6.2864
+2026-03-12 03:19:03,153 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:19:03,154 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:19:03,154 - INFO - Updated channel 'pressure': count=2500, mean=1012.9022, std=3.9240
+2026-03-12 03:19:03,154 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:19:03,154 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:19:03,154 - INFO - Updated channel 'wind_speed': count=2500, mean=9.9878, std=3.0633
+2026-03-12 03:19:03,318 - INFO - Anomaly detection completed successfully
+2026-03-12 03:19:03,354 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T031901.csv
+2026-03-12 03:19:03,384 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:19:03,481 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:19:03,482 - INFO - Updated baseline saved to S3
+2026-03-12 03:19:03,511 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T031901_summary.json
+2026-03-12 03:19:03,511 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 03:20:03,084 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:20:03,084 - INFO - Notification contains 1 record(s)
+2026-03-12 03:20:03,084 - INFO - New file detected: raw/sensors_20260312T032001.csv
+2026-03-12 03:20:03,084 - INFO - Queueing background processing for file: raw/sensors_20260312T032001.csv
+2026-03-12 03:20:03,086 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032001.csv
+2026-03-12 03:20:03,202 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032001.csv
+2026-03-12 03:20:03,202 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:20:03,202 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:20:03,320 - INFO - Baseline loaded successfully
+2026-03-12 03:20:03,320 - INFO - Baseline loaded successfully
+2026-03-12 03:20:03,321 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:20:03,321 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:20:03,321 - INFO - Updated channel 'temperature': count=2600, mean=22.0008, std=1.8637
+2026-03-12 03:20:03,322 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:20:03,322 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:20:03,322 - INFO - Updated channel 'humidity': count=2600, mean=54.8861, std=6.2902
+2026-03-12 03:20:03,323 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:20:03,323 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:20:03,323 - INFO - Updated channel 'pressure': count=2600, mean=1012.9062, std=3.9456
+2026-03-12 03:20:03,323 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:20:03,323 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:20:03,324 - INFO - Updated channel 'wind_speed': count=2600, mean=10.0075, std=3.0724
+2026-03-12 03:20:03,517 - INFO - Anomaly detection completed successfully
+2026-03-12 03:20:03,550 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032001.csv
+2026-03-12 03:20:03,581 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:20:03,611 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:20:03,611 - INFO - Updated baseline saved to S3
+2026-03-12 03:20:03,636 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032001_summary.json
+2026-03-12 03:20:03,636 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 03:21:02,898 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:21:02,898 - INFO - Notification contains 1 record(s)
+2026-03-12 03:21:02,898 - INFO - New file detected: raw/sensors_20260312T032101.csv
+2026-03-12 03:21:02,898 - INFO - Queueing background processing for file: raw/sensors_20260312T032101.csv
+2026-03-12 03:21:02,899 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032101.csv
+2026-03-12 03:21:02,982 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032101.csv
+2026-03-12 03:21:02,982 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:21:02,982 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:21:03,057 - INFO - Baseline loaded successfully
+2026-03-12 03:21:03,057 - INFO - Baseline loaded successfully
+2026-03-12 03:21:03,058 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:21:03,058 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:21:03,058 - INFO - Updated channel 'temperature': count=2700, mean=21.9901, std=1.9351
+2026-03-12 03:21:03,059 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:21:03,059 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:21:03,059 - INFO - Updated channel 'humidity': count=2700, mean=54.8961, std=6.2945
+2026-03-12 03:21:03,059 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:21:03,059 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:21:03,059 - INFO - Updated channel 'pressure': count=2700, mean=1012.9034, std=3.9168
+2026-03-12 03:21:03,060 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:21:03,060 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:21:03,060 - INFO - Updated channel 'wind_speed': count=2700, mean=9.9813, std=3.0598
+2026-03-12 03:21:03,226 - INFO - Anomaly detection completed successfully
+2026-03-12 03:21:03,264 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032101.csv
+2026-03-12 03:21:03,297 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:21:03,356 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:21:03,356 - INFO - Updated baseline saved to S3
+2026-03-12 03:21:03,397 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032101_summary.json
+2026-03-12 03:21:03,397 - INFO - Processing complete: 7/100 rows flagged as anomalies
+2026-03-12 03:22:03,256 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:22:03,256 - INFO - Notification contains 1 record(s)
+2026-03-12 03:22:03,256 - INFO - New file detected: raw/sensors_20260312T032202.csv
+2026-03-12 03:22:03,256 - INFO - Queueing background processing for file: raw/sensors_20260312T032202.csv
+2026-03-12 03:22:03,258 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032202.csv
+2026-03-12 03:22:03,332 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032202.csv
+2026-03-12 03:22:03,333 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:22:03,333 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:22:03,428 - INFO - Baseline loaded successfully
+2026-03-12 03:22:03,428 - INFO - Baseline loaded successfully
+2026-03-12 03:22:03,428 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:22:03,429 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:22:03,429 - INFO - Updated channel 'temperature': count=2800, mean=21.9966, std=1.9403
+2026-03-12 03:22:03,429 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:22:03,429 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:22:03,430 - INFO - Updated channel 'humidity': count=2800, mean=54.9230, std=6.2508
+2026-03-12 03:22:03,430 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:22:03,430 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:22:03,430 - INFO - Updated channel 'pressure': count=2800, mean=1012.8873, std=3.9080
+2026-03-12 03:22:03,430 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:22:03,431 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:22:03,431 - INFO - Updated channel 'wind_speed': count=2800, mean=9.9824, std=3.0708
+2026-03-12 03:22:03,596 - INFO - Anomaly detection completed successfully
+2026-03-12 03:22:03,677 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032202.csv
+2026-03-12 03:22:03,715 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:22:03,751 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:22:03,751 - INFO - Updated baseline saved to S3
+2026-03-12 03:22:03,780 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032202_summary.json
+2026-03-12 03:22:03,780 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:23:03,194 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:23:03,195 - INFO - Notification contains 1 record(s)
+2026-03-12 03:23:03,195 - INFO - New file detected: raw/sensors_20260312T032302.csv
+2026-03-12 03:23:03,195 - INFO - Queueing background processing for file: raw/sensors_20260312T032302.csv
+2026-03-12 03:23:03,196 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032302.csv
+2026-03-12 03:23:03,272 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032302.csv
+2026-03-12 03:23:03,273 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:23:03,273 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:23:03,430 - INFO - Baseline loaded successfully
+2026-03-12 03:23:03,430 - INFO - Baseline loaded successfully
+2026-03-12 03:23:03,431 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:23:03,431 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:23:03,431 - INFO - Updated channel 'temperature': count=2900, mean=21.9952, std=1.9590
+2026-03-12 03:23:03,431 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:23:03,431 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:23:03,431 - INFO - Updated channel 'humidity': count=2900, mean=54.9130, std=6.2188
+2026-03-12 03:23:03,432 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:23:03,432 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:23:03,432 - INFO - Updated channel 'pressure': count=2900, mean=1012.8949, std=3.9274
+2026-03-12 03:23:03,432 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:23:03,432 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:23:03,433 - INFO - Updated channel 'wind_speed': count=2900, mean=9.9845, std=3.0618
+2026-03-12 03:23:03,594 - INFO - Anomaly detection completed successfully
+2026-03-12 03:23:03,686 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032302.csv
+2026-03-12 03:23:03,774 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:23:03,921 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:23:03,921 - INFO - Updated baseline saved to S3
+2026-03-12 03:23:03,949 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032302_summary.json
+2026-03-12 03:23:03,949 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:24:03,552 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:24:03,552 - INFO - Notification contains 1 record(s)
+2026-03-12 03:24:03,553 - INFO - New file detected: raw/sensors_20260312T032402.csv
+2026-03-12 03:24:03,553 - INFO - Queueing background processing for file: raw/sensors_20260312T032402.csv
+2026-03-12 03:24:03,554 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032402.csv
+2026-03-12 03:24:03,629 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032402.csv
+2026-03-12 03:24:03,629 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:24:03,629 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:24:03,798 - INFO - Baseline loaded successfully
+2026-03-12 03:24:03,798 - INFO - Baseline loaded successfully
+2026-03-12 03:24:03,799 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:24:03,799 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:24:03,799 - INFO - Updated channel 'temperature': count=3000, mean=21.9939, std=1.9476
+2026-03-12 03:24:03,799 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:24:03,799 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:24:03,799 - INFO - Updated channel 'humidity': count=3000, mean=54.8910, std=6.3007
+2026-03-12 03:24:03,800 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:24:03,800 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:24:03,800 - INFO - Updated channel 'pressure': count=3000, mean=1012.8890, std=3.8920
+2026-03-12 03:24:03,800 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:24:03,800 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:24:03,800 - INFO - Updated channel 'wind_speed': count=3000, mean=9.9738, std=3.0555
+2026-03-12 03:24:03,963 - INFO - Anomaly detection completed successfully
+2026-03-12 03:24:04,057 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032402.csv
+2026-03-12 03:24:04,092 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:24:04,131 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:24:04,132 - INFO - Updated baseline saved to S3
+2026-03-12 03:24:04,161 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032402_summary.json
+2026-03-12 03:24:04,161 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:25:04,170 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:25:04,170 - INFO - Notification contains 1 record(s)
+2026-03-12 03:25:04,170 - INFO - New file detected: raw/sensors_20260312T032502.csv
+2026-03-12 03:25:04,170 - INFO - Queueing background processing for file: raw/sensors_20260312T032502.csv
+2026-03-12 03:25:04,172 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032502.csv
+2026-03-12 03:25:04,253 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032502.csv
+2026-03-12 03:25:04,253 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:25:04,253 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:25:04,347 - INFO - Baseline loaded successfully
+2026-03-12 03:25:04,347 - INFO - Baseline loaded successfully
+2026-03-12 03:25:04,348 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:25:04,348 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:25:04,348 - INFO - Updated channel 'temperature': count=3100, mean=21.9935, std=1.9407
+2026-03-12 03:25:04,348 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:25:04,348 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:25:04,348 - INFO - Updated channel 'humidity': count=3100, mean=54.9008, std=6.5075
+2026-03-12 03:25:04,349 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:25:04,349 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:25:04,349 - INFO - Updated channel 'pressure': count=3100, mean=1012.8859, std=3.8601
+2026-03-12 03:25:04,349 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:25:04,349 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:25:04,350 - INFO - Updated channel 'wind_speed': count=3100, mean=9.9723, std=3.0387
+2026-03-12 03:25:04,514 - INFO - Anomaly detection completed successfully
+2026-03-12 03:25:04,574 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032502.csv
+2026-03-12 03:25:04,684 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:25:04,765 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:25:04,765 - INFO - Updated baseline saved to S3
+2026-03-12 03:25:04,796 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032502_summary.json
+2026-03-12 03:25:04,797 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:26:04,027 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:26:04,027 - INFO - Notification contains 1 record(s)
+2026-03-12 03:26:04,027 - INFO - New file detected: raw/sensors_20260312T032602.csv
+2026-03-12 03:26:04,027 - INFO - Queueing background processing for file: raw/sensors_20260312T032602.csv
+2026-03-12 03:26:04,028 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032602.csv
+2026-03-12 03:26:04,107 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032602.csv
+2026-03-12 03:26:04,107 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:26:04,107 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:26:04,176 - INFO - Baseline loaded successfully
+2026-03-12 03:26:04,176 - INFO - Baseline loaded successfully
+2026-03-12 03:26:04,176 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:26:04,176 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:26:04,176 - INFO - Updated channel 'temperature': count=3200, mean=21.9856, std=1.9392
+2026-03-12 03:26:04,177 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:26:04,177 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:26:04,177 - INFO - Updated channel 'humidity': count=3200, mean=54.9195, std=6.4612
+2026-03-12 03:26:04,178 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:26:04,178 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:26:04,178 - INFO - Updated channel 'pressure': count=3200, mean=1012.9095, std=3.8862
+2026-03-12 03:26:04,178 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:26:04,178 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:26:04,178 - INFO - Updated channel 'wind_speed': count=3200, mean=9.9783, std=3.0483
+2026-03-12 03:26:04,338 - INFO - Anomaly detection completed successfully
+2026-03-12 03:26:04,372 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032602.csv
+2026-03-12 03:26:04,400 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:26:04,447 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:26:04,447 - INFO - Updated baseline saved to S3
+2026-03-12 03:26:04,499 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032602_summary.json
+2026-03-12 03:26:04,500 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 03:28:11,844 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:28:11,844 - INFO - Notification contains 1 record(s)
+2026-03-12 03:28:11,844 - INFO - New file detected: raw/sensors_20260312T032810.csv
+2026-03-12 03:28:11,844 - INFO - Queueing background processing for file: raw/sensors_20260312T032810.csv
+2026-03-12 03:28:11,846 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032810.csv
+2026-03-12 03:28:11,919 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032810.csv
+2026-03-12 03:28:11,919 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:28:11,919 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:28:11,988 - INFO - Baseline loaded successfully
+2026-03-12 03:28:11,988 - INFO - Baseline loaded successfully
+2026-03-12 03:28:11,988 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:28:11,988 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:28:11,989 - INFO - Updated channel 'temperature': count=3300, mean=21.9785, std=1.9290
+2026-03-12 03:28:11,989 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:28:11,989 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:28:11,989 - INFO - Updated channel 'humidity': count=3300, mean=54.9132, std=6.5151
+2026-03-12 03:28:11,990 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:28:11,990 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:28:11,990 - INFO - Updated channel 'pressure': count=3300, mean=1012.9046, std=3.9010
+2026-03-12 03:28:11,990 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:28:11,990 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:28:11,990 - INFO - Updated channel 'wind_speed': count=3300, mean=9.9883, std=3.0478
+2026-03-12 03:28:12,149 - INFO - Anomaly detection completed successfully
+2026-03-12 03:28:12,182 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032810.csv
+2026-03-12 03:28:12,210 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:28:12,261 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:28:12,261 - INFO - Updated baseline saved to S3
+2026-03-12 03:28:12,309 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032810_summary.json
+2026-03-12 03:28:12,310 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:29:11,620 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:29:11,620 - INFO - Notification contains 1 record(s)
+2026-03-12 03:29:11,620 - INFO - New file detected: raw/sensors_20260312T032910.csv
+2026-03-12 03:29:11,620 - INFO - Queueing background processing for file: raw/sensors_20260312T032910.csv
+2026-03-12 03:29:11,621 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032910.csv
+2026-03-12 03:29:11,695 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T032910.csv
+2026-03-12 03:29:11,695 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:29:11,695 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:29:11,795 - INFO - Baseline loaded successfully
+2026-03-12 03:29:11,795 - INFO - Baseline loaded successfully
+2026-03-12 03:29:11,796 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:29:11,796 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:29:11,796 - INFO - Updated channel 'temperature': count=3400, mean=21.9738, std=1.9432
+2026-03-12 03:29:11,796 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:29:11,796 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:29:11,797 - INFO - Updated channel 'humidity': count=3400, mean=54.9029, std=6.5289
+2026-03-12 03:29:11,797 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:29:11,797 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:29:11,797 - INFO - Updated channel 'pressure': count=3400, mean=1012.8930, std=3.8950
+2026-03-12 03:29:11,798 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:29:11,798 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:29:11,798 - INFO - Updated channel 'wind_speed': count=3400, mean=9.9868, std=3.0341
+2026-03-12 03:29:11,956 - INFO - Anomaly detection completed successfully
+2026-03-12 03:29:11,991 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032910.csv
+2026-03-12 03:29:12,035 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:29:12,069 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:29:12,069 - INFO - Updated baseline saved to S3
+2026-03-12 03:29:12,101 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T032910_summary.json
+2026-03-12 03:29:12,101 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:30:12,054 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:30:12,054 - INFO - Notification contains 1 record(s)
+2026-03-12 03:30:12,054 - INFO - New file detected: raw/sensors_20260312T033010.csv
+2026-03-12 03:30:12,054 - INFO - Queueing background processing for file: raw/sensors_20260312T033010.csv
+2026-03-12 03:30:12,055 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033010.csv
+2026-03-12 03:30:12,128 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033010.csv
+2026-03-12 03:30:12,128 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:30:12,128 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:30:12,201 - INFO - Baseline loaded successfully
+2026-03-12 03:30:12,201 - INFO - Baseline loaded successfully
+2026-03-12 03:30:12,202 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:30:12,202 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:30:12,202 - INFO - Updated channel 'temperature': count=3500, mean=21.9788, std=1.9752
+2026-03-12 03:30:12,202 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:30:12,203 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:30:12,203 - INFO - Updated channel 'humidity': count=3500, mean=54.9301, std=6.4950
+2026-03-12 03:30:12,203 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:30:12,203 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:30:12,203 - INFO - Updated channel 'pressure': count=3500, mean=1012.8918, std=3.8999
+2026-03-12 03:30:12,204 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:30:12,204 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:30:12,204 - INFO - Updated channel 'wind_speed': count=3500, mean=9.9814, std=3.0215
+2026-03-12 03:30:12,363 - INFO - Anomaly detection completed successfully
+2026-03-12 03:30:12,412 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033010.csv
+2026-03-12 03:30:12,441 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:30:12,484 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:30:12,484 - INFO - Updated baseline saved to S3
+2026-03-12 03:30:12,517 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033010_summary.json
+2026-03-12 03:30:12,518 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 03:31:11,784 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:31:11,784 - INFO - Notification contains 1 record(s)
+2026-03-12 03:31:11,785 - INFO - New file detected: raw/sensors_20260312T033110.csv
+2026-03-12 03:31:11,785 - INFO - Queueing background processing for file: raw/sensors_20260312T033110.csv
+2026-03-12 03:31:11,786 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033110.csv
+2026-03-12 03:31:11,865 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033110.csv
+2026-03-12 03:31:11,865 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:31:11,865 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:31:11,986 - INFO - Baseline loaded successfully
+2026-03-12 03:31:11,986 - INFO - Baseline loaded successfully
+2026-03-12 03:31:11,987 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:31:11,987 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:31:11,987 - INFO - Updated channel 'temperature': count=3600, mean=21.9734, std=1.9654
+2026-03-12 03:31:11,987 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:31:11,988 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:31:11,988 - INFO - Updated channel 'humidity': count=3600, mean=54.9174, std=6.4744
+2026-03-12 03:31:11,988 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:31:11,988 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:31:11,988 - INFO - Updated channel 'pressure': count=3600, mean=1012.9215, std=3.9214
+2026-03-12 03:31:11,989 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:31:11,989 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:31:11,989 - INFO - Updated channel 'wind_speed': count=3600, mean=9.9842, std=3.0168
+2026-03-12 03:31:12,151 - INFO - Anomaly detection completed successfully
+2026-03-12 03:31:12,188 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033110.csv
+2026-03-12 03:31:12,220 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:31:12,248 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:31:12,248 - INFO - Updated baseline saved to S3
+2026-03-12 03:31:12,284 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033110_summary.json
+2026-03-12 03:31:12,285 - INFO - Processing complete: 7/100 rows flagged as anomalies
+2026-03-12 03:32:12,279 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:32:12,279 - INFO - Notification contains 1 record(s)
+2026-03-12 03:32:12,279 - INFO - New file detected: raw/sensors_20260312T033211.csv
+2026-03-12 03:32:12,279 - INFO - Queueing background processing for file: raw/sensors_20260312T033211.csv
+2026-03-12 03:32:12,280 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033211.csv
+2026-03-12 03:32:12,362 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033211.csv
+2026-03-12 03:32:12,363 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:32:12,363 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:32:12,434 - INFO - Baseline loaded successfully
+2026-03-12 03:32:12,434 - INFO - Baseline loaded successfully
+2026-03-12 03:32:12,434 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:32:12,435 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:32:12,435 - INFO - Updated channel 'temperature': count=3700, mean=21.9759, std=1.9556
+2026-03-12 03:32:12,435 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:32:12,435 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:32:12,435 - INFO - Updated channel 'humidity': count=3700, mean=54.9318, std=6.5436
+2026-03-12 03:32:12,436 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:32:12,436 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:32:12,436 - INFO - Updated channel 'pressure': count=3700, mean=1012.9144, std=3.9306
+2026-03-12 03:32:12,436 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:32:12,436 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:32:12,436 - INFO - Updated channel 'wind_speed': count=3700, mean=9.9804, std=3.0027
+2026-03-12 03:32:12,596 - INFO - Anomaly detection completed successfully
+2026-03-12 03:32:12,632 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033211.csv
+2026-03-12 03:32:12,664 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:32:12,727 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:32:12,727 - INFO - Updated baseline saved to S3
+2026-03-12 03:32:12,766 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033211_summary.json
+2026-03-12 03:32:12,766 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 03:33:12,304 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:33:12,305 - INFO - Notification contains 1 record(s)
+2026-03-12 03:33:12,305 - INFO - New file detected: raw/sensors_20260312T033311.csv
+2026-03-12 03:33:12,305 - INFO - Queueing background processing for file: raw/sensors_20260312T033311.csv
+2026-03-12 03:33:12,306 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033311.csv
+2026-03-12 03:33:12,390 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033311.csv
+2026-03-12 03:33:12,390 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:33:12,390 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:33:12,477 - INFO - Baseline loaded successfully
+2026-03-12 03:33:12,477 - INFO - Baseline loaded successfully
+2026-03-12 03:33:12,478 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:33:12,478 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:33:12,478 - INFO - Updated channel 'temperature': count=3800, mean=21.9763, std=1.9483
+2026-03-12 03:33:12,478 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:33:12,478 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:33:12,479 - INFO - Updated channel 'humidity': count=3800, mean=54.9000, std=6.5305
+2026-03-12 03:33:12,479 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:33:12,479 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:33:12,479 - INFO - Updated channel 'pressure': count=3800, mean=1012.9138, std=3.9008
+2026-03-12 03:33:12,479 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:33:12,480 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:33:12,480 - INFO - Updated channel 'wind_speed': count=3800, mean=9.9977, std=3.0480
+2026-03-12 03:33:12,638 - INFO - Anomaly detection completed successfully
+2026-03-12 03:33:12,691 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033311.csv
+2026-03-12 03:33:12,727 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:33:12,782 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:33:12,783 - INFO - Updated baseline saved to S3
+2026-03-12 03:33:12,814 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033311_summary.json
+2026-03-12 03:33:12,814 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 03:34:12,554 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:34:12,555 - INFO - Notification contains 1 record(s)
+2026-03-12 03:34:12,555 - INFO - New file detected: raw/sensors_20260312T033411.csv
+2026-03-12 03:34:12,555 - INFO - Queueing background processing for file: raw/sensors_20260312T033411.csv
+2026-03-12 03:34:12,556 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033411.csv
+2026-03-12 03:34:12,629 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033411.csv
+2026-03-12 03:34:12,629 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:34:12,629 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:34:12,718 - INFO - Baseline loaded successfully
+2026-03-12 03:34:12,719 - INFO - Baseline loaded successfully
+2026-03-12 03:34:12,719 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:34:12,719 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:34:12,719 - INFO - Updated channel 'temperature': count=3900, mean=21.9838, std=1.9432
+2026-03-12 03:34:12,720 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:34:12,720 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:34:12,720 - INFO - Updated channel 'humidity': count=3900, mean=54.9171, std=6.5199
+2026-03-12 03:34:12,720 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:34:12,720 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:34:12,721 - INFO - Updated channel 'pressure': count=3900, mean=1012.9082, std=3.8735
+2026-03-12 03:34:12,721 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:34:12,721 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:34:12,721 - INFO - Updated channel 'wind_speed': count=3900, mean=9.9964, std=3.0857
+2026-03-12 03:34:12,878 - INFO - Anomaly detection completed successfully
+2026-03-12 03:34:12,907 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033411.csv
+2026-03-12 03:34:12,938 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:34:13,007 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:34:13,007 - INFO - Updated baseline saved to S3
+2026-03-12 03:34:13,040 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033411_summary.json
+2026-03-12 03:34:13,040 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:35:12,469 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:35:12,469 - INFO - Notification contains 1 record(s)
+2026-03-12 03:35:12,469 - INFO - New file detected: raw/sensors_20260312T033511.csv
+2026-03-12 03:35:12,469 - INFO - Queueing background processing for file: raw/sensors_20260312T033511.csv
+2026-03-12 03:35:12,470 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033511.csv
+2026-03-12 03:35:12,544 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033511.csv
+2026-03-12 03:35:12,545 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:35:12,545 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:35:12,631 - INFO - Baseline loaded successfully
+2026-03-12 03:35:12,631 - INFO - Baseline loaded successfully
+2026-03-12 03:35:12,632 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:35:12,632 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:35:12,632 - INFO - Updated channel 'temperature': count=4000, mean=21.9827, std=1.9373
+2026-03-12 03:35:12,632 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:35:12,632 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:35:12,632 - INFO - Updated channel 'humidity': count=4000, mean=54.9320, std=6.4744
+2026-03-12 03:35:12,633 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:35:12,633 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:35:12,633 - INFO - Updated channel 'pressure': count=4000, mean=1012.9090, std=3.8821
+2026-03-12 03:35:12,633 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:35:12,633 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:35:12,634 - INFO - Updated channel 'wind_speed': count=4000, mean=9.9932, std=3.0853
+2026-03-12 03:35:12,794 - INFO - Anomaly detection completed successfully
+2026-03-12 03:35:12,825 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033511.csv
+2026-03-12 03:35:12,864 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:35:12,912 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:35:12,912 - INFO - Updated baseline saved to S3
+2026-03-12 03:35:12,942 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033511_summary.json
+2026-03-12 03:35:12,942 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:36:13,034 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:36:13,034 - INFO - Notification contains 1 record(s)
+2026-03-12 03:36:13,035 - INFO - New file detected: raw/sensors_20260312T033611.csv
+2026-03-12 03:36:13,035 - INFO - Queueing background processing for file: raw/sensors_20260312T033611.csv
+2026-03-12 03:36:13,036 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033611.csv
+2026-03-12 03:36:13,118 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033611.csv
+2026-03-12 03:36:13,118 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:36:13,118 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:36:13,201 - INFO - Baseline loaded successfully
+2026-03-12 03:36:13,201 - INFO - Baseline loaded successfully
+2026-03-12 03:36:13,202 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:36:13,202 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:36:13,202 - INFO - Updated channel 'temperature': count=4100, mean=21.9812, std=1.9297
+2026-03-12 03:36:13,202 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:36:13,203 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:36:13,203 - INFO - Updated channel 'humidity': count=4100, mean=54.9273, std=6.4586
+2026-03-12 03:36:13,203 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:36:13,203 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:36:13,203 - INFO - Updated channel 'pressure': count=4100, mean=1012.9082, std=3.8711
+2026-03-12 03:36:13,204 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:36:13,204 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:36:13,204 - INFO - Updated channel 'wind_speed': count=4100, mean=9.9965, std=3.1355
+2026-03-12 03:36:13,366 - INFO - Anomaly detection completed successfully
+2026-03-12 03:36:13,399 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033611.csv
+2026-03-12 03:36:13,430 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:36:13,491 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:36:13,491 - INFO - Updated baseline saved to S3
+2026-03-12 03:36:13,522 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033611_summary.json
+2026-03-12 03:36:13,522 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 03:37:12,664 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:37:12,664 - INFO - Notification contains 1 record(s)
+2026-03-12 03:37:12,664 - INFO - New file detected: raw/sensors_20260312T033711.csv
+2026-03-12 03:37:12,664 - INFO - Queueing background processing for file: raw/sensors_20260312T033711.csv
+2026-03-12 03:37:12,666 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033711.csv
+2026-03-12 03:37:12,743 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033711.csv
+2026-03-12 03:37:12,744 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:37:12,744 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:37:12,830 - INFO - Baseline loaded successfully
+2026-03-12 03:37:12,830 - INFO - Baseline loaded successfully
+2026-03-12 03:37:12,830 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:37:12,830 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:37:12,830 - INFO - Updated channel 'temperature': count=4200, mean=21.9824, std=1.9299
+2026-03-12 03:37:12,831 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:37:12,831 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:37:12,831 - INFO - Updated channel 'humidity': count=4200, mean=54.9147, std=6.4327
+2026-03-12 03:37:12,831 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:37:12,831 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:37:12,832 - INFO - Updated channel 'pressure': count=4200, mean=1012.9111, std=3.8732
+2026-03-12 03:37:12,832 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:37:12,832 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:37:12,832 - INFO - Updated channel 'wind_speed': count=4200, mean=9.9965, std=3.1415
+2026-03-12 03:37:12,991 - INFO - Anomaly detection completed successfully
+2026-03-12 03:37:13,018 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033711.csv
+2026-03-12 03:37:13,048 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:37:13,078 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:37:13,079 - INFO - Updated baseline saved to S3
+2026-03-12 03:37:13,102 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033711_summary.json
+2026-03-12 03:37:13,102 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:38:13,188 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:38:13,188 - INFO - Notification contains 1 record(s)
+2026-03-12 03:38:13,188 - INFO - New file detected: raw/sensors_20260312T033812.csv
+2026-03-12 03:38:13,188 - INFO - Queueing background processing for file: raw/sensors_20260312T033812.csv
+2026-03-12 03:38:13,190 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033812.csv
+2026-03-12 03:38:13,296 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033812.csv
+2026-03-12 03:38:13,296 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:38:13,296 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:38:13,376 - INFO - Baseline loaded successfully
+2026-03-12 03:38:13,376 - INFO - Baseline loaded successfully
+2026-03-12 03:38:13,376 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:38:13,377 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:38:13,377 - INFO - Updated channel 'temperature': count=4300, mean=21.9858, std=1.9434
+2026-03-12 03:38:13,377 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:38:13,377 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:38:13,377 - INFO - Updated channel 'humidity': count=4300, mean=54.9266, std=6.4134
+2026-03-12 03:38:13,378 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:38:13,378 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:38:13,378 - INFO - Updated channel 'pressure': count=4300, mean=1012.9079, std=3.8844
+2026-03-12 03:38:13,378 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:38:13,378 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:38:13,379 - INFO - Updated channel 'wind_speed': count=4300, mean=10.0029, std=3.1266
+2026-03-12 03:38:13,546 - INFO - Anomaly detection completed successfully
+2026-03-12 03:38:13,585 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033812.csv
+2026-03-12 03:38:13,616 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:38:13,674 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:38:13,675 - INFO - Updated baseline saved to S3
+2026-03-12 03:38:13,721 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033812_summary.json
+2026-03-12 03:38:13,721 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:39:13,807 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:39:13,807 - INFO - Notification contains 1 record(s)
+2026-03-12 03:39:13,807 - INFO - New file detected: raw/sensors_20260312T033912.csv
+2026-03-12 03:39:13,807 - INFO - Queueing background processing for file: raw/sensors_20260312T033912.csv
+2026-03-12 03:39:13,808 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033912.csv
+2026-03-12 03:39:13,916 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T033912.csv
+2026-03-12 03:39:13,916 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:39:13,916 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:39:13,990 - INFO - Baseline loaded successfully
+2026-03-12 03:39:13,990 - INFO - Baseline loaded successfully
+2026-03-12 03:39:13,990 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:39:13,991 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:39:13,991 - INFO - Updated channel 'temperature': count=4400, mean=21.9832, std=1.9357
+2026-03-12 03:39:13,991 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:39:13,991 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:39:13,991 - INFO - Updated channel 'humidity': count=4400, mean=54.9295, std=6.3883
+2026-03-12 03:39:13,992 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:39:13,992 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:39:13,992 - INFO - Updated channel 'pressure': count=4400, mean=1012.9034, std=3.9103
+2026-03-12 03:39:13,992 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:39:13,992 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:39:13,993 - INFO - Updated channel 'wind_speed': count=4400, mean=9.9956, std=3.1492
+2026-03-12 03:39:14,158 - INFO - Anomaly detection completed successfully
+2026-03-12 03:39:14,238 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033912.csv
+2026-03-12 03:39:14,269 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:39:14,350 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:39:14,351 - INFO - Updated baseline saved to S3
+2026-03-12 03:39:14,386 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T033912_summary.json
+2026-03-12 03:39:14,386 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 03:40:13,537 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:40:13,537 - INFO - Notification contains 1 record(s)
+2026-03-12 03:40:13,537 - INFO - New file detected: raw/sensors_20260312T034012.csv
+2026-03-12 03:40:13,537 - INFO - Queueing background processing for file: raw/sensors_20260312T034012.csv
+2026-03-12 03:40:13,538 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034012.csv
+2026-03-12 03:40:13,611 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034012.csv
+2026-03-12 03:40:13,611 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:40:13,611 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:40:13,701 - INFO - Baseline loaded successfully
+2026-03-12 03:40:13,701 - INFO - Baseline loaded successfully
+2026-03-12 03:40:13,701 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:40:13,702 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:40:13,702 - INFO - Updated channel 'temperature': count=4500, mean=21.9830, std=1.9469
+2026-03-12 03:40:13,702 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:40:13,702 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:40:13,702 - INFO - Updated channel 'humidity': count=4500, mean=54.9435, std=6.3546
+2026-03-12 03:40:13,703 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:40:13,703 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:40:13,703 - INFO - Updated channel 'pressure': count=4500, mean=1012.8999, std=3.8971
+2026-03-12 03:40:13,703 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:40:13,703 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:40:13,703 - INFO - Updated channel 'wind_speed': count=4500, mean=10.0067, std=3.1417
+2026-03-12 03:40:13,863 - INFO - Anomaly detection completed successfully
+2026-03-12 03:40:13,891 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034012.csv
+2026-03-12 03:40:13,918 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:40:13,953 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:40:13,953 - INFO - Updated baseline saved to S3
+2026-03-12 03:40:13,989 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034012_summary.json
+2026-03-12 03:40:13,990 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 03:41:14,011 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:41:14,012 - INFO - Notification contains 1 record(s)
+2026-03-12 03:41:14,013 - INFO - New file detected: raw/sensors_20260312T034112.csv
+2026-03-12 03:41:14,013 - INFO - Queueing background processing for file: raw/sensors_20260312T034112.csv
+2026-03-12 03:41:14,014 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034112.csv
+2026-03-12 03:41:14,086 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034112.csv
+2026-03-12 03:41:14,086 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:41:14,086 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:41:14,204 - INFO - Baseline loaded successfully
+2026-03-12 03:41:14,204 - INFO - Baseline loaded successfully
+2026-03-12 03:41:14,204 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:41:14,205 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:41:14,205 - INFO - Updated channel 'temperature': count=4600, mean=21.9753, std=1.9591
+2026-03-12 03:41:14,205 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:41:14,205 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:41:14,205 - INFO - Updated channel 'humidity': count=4600, mean=54.9434, std=6.3261
+2026-03-12 03:41:14,206 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:41:14,206 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:41:14,206 - INFO - Updated channel 'pressure': count=4600, mean=1012.9053, std=3.8927
+2026-03-12 03:41:14,206 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:41:14,206 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:41:14,207 - INFO - Updated channel 'wind_speed': count=4600, mean=10.0026, std=3.1513
+2026-03-12 03:41:14,365 - INFO - Anomaly detection completed successfully
+2026-03-12 03:41:14,403 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034112.csv
+2026-03-12 03:41:14,435 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:41:14,468 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:41:14,468 - INFO - Updated baseline saved to S3
+2026-03-12 03:41:14,494 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034112_summary.json
+2026-03-12 03:41:14,494 - INFO - Processing complete: 6/100 rows flagged as anomalies
+2026-03-12 03:42:13,784 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:42:13,785 - INFO - Notification contains 1 record(s)
+2026-03-12 03:42:13,785 - INFO - New file detected: raw/sensors_20260312T034212.csv
+2026-03-12 03:42:13,785 - INFO - Queueing background processing for file: raw/sensors_20260312T034212.csv
+2026-03-12 03:42:13,786 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034212.csv
+2026-03-12 03:42:13,863 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034212.csv
+2026-03-12 03:42:13,863 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:42:13,863 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:42:13,942 - INFO - Baseline loaded successfully
+2026-03-12 03:42:13,942 - INFO - Baseline loaded successfully
+2026-03-12 03:42:13,943 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:42:13,943 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:42:13,943 - INFO - Updated channel 'temperature': count=4700, mean=21.9725, std=1.9508
+2026-03-12 03:42:13,943 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:42:13,943 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:42:13,944 - INFO - Updated channel 'humidity': count=4700, mean=54.9007, std=6.3656
+2026-03-12 03:42:13,944 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:42:13,944 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:42:13,944 - INFO - Updated channel 'pressure': count=4700, mean=1012.9008, std=3.8734
+2026-03-12 03:42:13,944 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:42:13,945 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:42:13,945 - INFO - Updated channel 'wind_speed': count=4700, mean=9.9999, std=3.1564
+2026-03-12 03:42:14,104 - INFO - Anomaly detection completed successfully
+2026-03-12 03:42:14,142 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034212.csv
+2026-03-12 03:42:14,170 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:42:14,208 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:42:14,208 - INFO - Updated baseline saved to S3
+2026-03-12 03:42:14,239 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034212_summary.json
+2026-03-12 03:42:14,239 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:43:14,193 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:43:14,193 - INFO - Notification contains 1 record(s)
+2026-03-12 03:43:14,193 - INFO - New file detected: raw/sensors_20260312T034313.csv
+2026-03-12 03:43:14,194 - INFO - Queueing background processing for file: raw/sensors_20260312T034313.csv
+2026-03-12 03:43:14,195 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034313.csv
+2026-03-12 03:43:14,263 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034313.csv
+2026-03-12 03:43:14,263 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:43:14,263 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:43:14,354 - INFO - Baseline loaded successfully
+2026-03-12 03:43:14,354 - INFO - Baseline loaded successfully
+2026-03-12 03:43:14,355 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:43:14,355 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:43:14,355 - INFO - Updated channel 'temperature': count=4800, mean=21.9756, std=1.9506
+2026-03-12 03:43:14,355 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:43:14,355 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:43:14,356 - INFO - Updated channel 'humidity': count=4800, mean=54.8817, std=6.3658
+2026-03-12 03:43:14,356 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:43:14,356 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:43:14,356 - INFO - Updated channel 'pressure': count=4800, mean=1012.9015, std=3.8700
+2026-03-12 03:43:14,356 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:43:14,356 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:43:14,357 - INFO - Updated channel 'wind_speed': count=4800, mean=10.0050, std=3.1559
+2026-03-12 03:43:14,518 - INFO - Anomaly detection completed successfully
+2026-03-12 03:43:14,545 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034313.csv
+2026-03-12 03:43:14,575 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:43:14,608 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:43:14,608 - INFO - Updated baseline saved to S3
+2026-03-12 03:43:14,637 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034313_summary.json
+2026-03-12 03:43:14,637 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:44:14,225 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:44:14,225 - INFO - Notification contains 1 record(s)
+2026-03-12 03:44:14,225 - INFO - New file detected: raw/sensors_20260312T034413.csv
+2026-03-12 03:44:14,225 - INFO - Queueing background processing for file: raw/sensors_20260312T034413.csv
+2026-03-12 03:44:14,226 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034413.csv
+2026-03-12 03:44:14,303 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034413.csv
+2026-03-12 03:44:14,303 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:44:14,303 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:44:14,376 - INFO - Baseline loaded successfully
+2026-03-12 03:44:14,376 - INFO - Baseline loaded successfully
+2026-03-12 03:44:14,377 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:44:14,377 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:44:14,377 - INFO - Updated channel 'temperature': count=4900, mean=21.9800, std=1.9479
+2026-03-12 03:44:14,377 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:44:14,377 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:44:14,378 - INFO - Updated channel 'humidity': count=4900, mean=54.8685, std=6.3657
+2026-03-12 03:44:14,378 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:44:14,378 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:44:14,378 - INFO - Updated channel 'pressure': count=4900, mean=1012.8979, std=3.8514
+2026-03-12 03:44:14,378 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:44:14,379 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:44:14,379 - INFO - Updated channel 'wind_speed': count=4900, mean=10.0148, std=3.1696
+2026-03-12 03:44:14,538 - INFO - Anomaly detection completed successfully
+2026-03-12 03:44:14,582 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034413.csv
+2026-03-12 03:44:14,610 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:44:14,641 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:44:14,642 - INFO - Updated baseline saved to S3
+2026-03-12 03:44:14,675 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034413_summary.json
+2026-03-12 03:44:14,675 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:45:14,527 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:45:14,527 - INFO - Notification contains 1 record(s)
+2026-03-12 03:45:14,527 - INFO - New file detected: raw/sensors_20260312T034513.csv
+2026-03-12 03:45:14,527 - INFO - Queueing background processing for file: raw/sensors_20260312T034513.csv
+2026-03-12 03:45:14,528 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034513.csv
+2026-03-12 03:45:14,606 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034513.csv
+2026-03-12 03:45:14,606 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:45:14,606 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:45:14,678 - INFO - Baseline loaded successfully
+2026-03-12 03:45:14,678 - INFO - Baseline loaded successfully
+2026-03-12 03:45:14,679 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:45:14,679 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:45:14,679 - INFO - Updated channel 'temperature': count=5000, mean=21.9865, std=1.9483
+2026-03-12 03:45:14,679 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:45:14,679 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:45:14,680 - INFO - Updated channel 'humidity': count=5000, mean=54.8498, std=6.3650
+2026-03-12 03:45:14,680 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:45:14,680 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:45:14,680 - INFO - Updated channel 'pressure': count=5000, mean=1012.9014, std=3.8413
+2026-03-12 03:45:14,680 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:45:14,680 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:45:14,681 - INFO - Updated channel 'wind_speed': count=5000, mean=10.0195, std=3.1654
+2026-03-12 03:45:14,840 - INFO - Anomaly detection completed successfully
+2026-03-12 03:45:14,873 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034513.csv
+2026-03-12 03:45:14,901 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:45:14,934 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:45:14,935 - INFO - Updated baseline saved to S3
+2026-03-12 03:45:14,963 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034513_summary.json
+2026-03-12 03:45:14,964 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:46:14,428 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:46:14,428 - INFO - Notification contains 1 record(s)
+2026-03-12 03:46:14,428 - INFO - New file detected: raw/sensors_20260312T034613.csv
+2026-03-12 03:46:14,428 - INFO - Queueing background processing for file: raw/sensors_20260312T034613.csv
+2026-03-12 03:46:14,429 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034613.csv
+2026-03-12 03:46:14,499 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034613.csv
+2026-03-12 03:46:14,499 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:46:14,500 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:46:14,573 - INFO - Baseline loaded successfully
+2026-03-12 03:46:14,574 - INFO - Baseline loaded successfully
+2026-03-12 03:46:14,574 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:46:14,574 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:46:14,574 - INFO - Updated channel 'temperature': count=5100, mean=21.9864, std=1.9576
+2026-03-12 03:46:14,575 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:46:14,575 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:46:14,575 - INFO - Updated channel 'humidity': count=5100, mean=54.8442, std=6.3443
+2026-03-12 03:46:14,575 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:46:14,575 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:46:14,575 - INFO - Updated channel 'pressure': count=5100, mean=1012.9016, std=3.8258
+2026-03-12 03:46:14,576 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:46:14,576 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:46:14,576 - INFO - Updated channel 'wind_speed': count=5100, mean=10.0182, std=3.1710
+2026-03-12 03:46:14,741 - INFO - Anomaly detection completed successfully
+2026-03-12 03:46:14,773 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034613.csv
+2026-03-12 03:46:14,800 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:46:14,829 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:46:14,830 - INFO - Updated baseline saved to S3
+2026-03-12 03:46:14,859 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034613_summary.json
+2026-03-12 03:46:14,859 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:47:14,845 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:47:14,845 - INFO - Notification contains 1 record(s)
+2026-03-12 03:47:14,845 - INFO - New file detected: raw/sensors_20260312T034713.csv
+2026-03-12 03:47:14,845 - INFO - Queueing background processing for file: raw/sensors_20260312T034713.csv
+2026-03-12 03:47:14,847 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034713.csv
+2026-03-12 03:47:14,915 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034713.csv
+2026-03-12 03:47:14,915 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:47:14,915 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:47:15,018 - INFO - Baseline loaded successfully
+2026-03-12 03:47:15,018 - INFO - Baseline loaded successfully
+2026-03-12 03:47:15,019 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:47:15,019 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:47:15,019 - INFO - Updated channel 'temperature': count=5200, mean=21.9788, std=1.9654
+2026-03-12 03:47:15,019 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:47:15,019 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:47:15,019 - INFO - Updated channel 'humidity': count=5200, mean=54.8518, std=6.3247
+2026-03-12 03:47:15,020 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:47:15,020 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:47:15,020 - INFO - Updated channel 'pressure': count=5200, mean=1012.8943, std=3.8263
+2026-03-12 03:47:15,020 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:47:15,020 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:47:15,021 - INFO - Updated channel 'wind_speed': count=5200, mean=10.0209, std=3.1838
+2026-03-12 03:47:15,179 - INFO - Anomaly detection completed successfully
+2026-03-12 03:47:15,210 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034713.csv
+2026-03-12 03:47:15,242 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:47:15,290 - INFO - Log file uploaded to s3://wissalkhl-ds5220-dp1-2026/logs/app.log
+2026-03-12 03:47:15,290 - INFO - Updated baseline saved to S3
+2026-03-12 03:47:15,323 - INFO - Summary JSON uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034713_summary.json
+2026-03-12 03:47:15,323 - INFO - Processing complete: 5/100 rows flagged as anomalies
+2026-03-12 03:48:15,304 - INFO - Received /notify request with SNS message type: Notification
+2026-03-12 03:48:15,304 - INFO - Notification contains 1 record(s)
+2026-03-12 03:48:15,304 - INFO - New file detected: raw/sensors_20260312T034813.csv
+2026-03-12 03:48:15,304 - INFO - Queueing background processing for file: raw/sensors_20260312T034813.csv
+2026-03-12 03:48:15,306 - INFO - Processing started for s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034813.csv
+2026-03-12 03:48:15,378 - INFO - Loaded 100 rows from s3://wissalkhl-ds5220-dp1-2026/raw/sensors_20260312T034813.csv
+2026-03-12 03:48:15,378 - INFO - CSV columns found: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-12 03:48:15,379 - INFO - Loading baseline from s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
+2026-03-12 03:48:15,503 - INFO - Baseline loaded successfully
+2026-03-12 03:48:15,503 - INFO - Baseline loaded successfully
+2026-03-12 03:48:15,504 - INFO - Updating baseline for column 'temperature' with 100 values
+2026-03-12 03:48:15,504 - INFO - Updating baseline for channel 'temperature' with 100 new value(s)
+2026-03-12 03:48:15,504 - INFO - Updated channel 'temperature': count=5300, mean=21.9758, std=1.9593
+2026-03-12 03:48:15,504 - INFO - Updating baseline for column 'humidity' with 100 values
+2026-03-12 03:48:15,504 - INFO - Updating baseline for channel 'humidity' with 100 new value(s)
+2026-03-12 03:48:15,505 - INFO - Updated channel 'humidity': count=5300, mean=54.8512, std=6.3408
+2026-03-12 03:48:15,505 - INFO - Updating baseline for column 'pressure' with 100 values
+2026-03-12 03:48:15,505 - INFO - Updating baseline for channel 'pressure' with 100 new value(s)
+2026-03-12 03:48:15,505 - INFO - Updated channel 'pressure': count=5300, mean=1012.8856, std=3.8124
+2026-03-12 03:48:15,506 - INFO - Updating baseline for column 'wind_speed' with 100 values
+2026-03-12 03:48:15,506 - INFO - Updating baseline for channel 'wind_speed' with 100 new value(s)
+2026-03-12 03:48:15,506 - INFO - Updated channel 'wind_speed': count=5300, mean=10.0150, std=3.2024
+2026-03-12 03:48:15,667 - INFO - Anomaly detection completed successfully
+2026-03-12 03:48:15,699 - INFO - Processed CSV uploaded to s3://wissalkhl-ds5220-dp1-2026/processed/sensors_20260312T034813.csv
+2026-03-12 03:48:15,732 - INFO - Baseline saved to s3://wissalkhl-ds5220-dp1-2026/state/baseline.json
