@@ -1,1 +1,221 @@
-# cloudformation solution goes here
+AWSTemplateFormatVersion: '2010-09-09'
+Description: DS5220 Data Project 1 - Event-driven anomaly detection pipeline
+
+Parameters:
+  MyIP:
+    Type: String
+    Description: Your public IPv4 in CIDR form for SSH, e.g. 67.129.8.202/32
+
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: Existing EC2 key pair name
+    Default: ds5220-dp1
+
+  RepoUrl:
+    Type: String
+    Description: URL of your forked anomaly-detection repo
+    Default: https://github.com/wissalkhl/anomaly-detection.git
+
+  UbuntuAmiId:
+    Type: String
+    Description: Ubuntu 24.04 LTS AMI ID for your AWS region
+
+  BucketName:
+    Type: String
+    Description: Globally unique S3 bucket name for this project
+
+Resources:
+  SnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: ds5220-dp1
+
+  SnsTopicPolicy:
+    Type: AWS::SNS::TopicPolicy
+    Properties:
+      Topics:
+        - !Ref SnsTopic
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: AllowS3PublishToTopic
+            Effect: Allow
+            Principal:
+              Service: s3.amazonaws.com
+            Action: sns:Publish
+            Resource: !Ref SnsTopic
+            Condition:
+              ArnLike:
+                aws:SourceArn: !Sub arn:aws:s3:::${BucketName}
+
+  AnomalyBucket:
+    Type: AWS::S3::Bucket
+    DependsOn:
+      - SnsTopicPolicy
+    Properties:
+      BucketName: !Ref BucketName
+      NotificationConfiguration:
+        TopicConfigurations:
+          - Event: s3:ObjectCreated:Put
+            Topic: !Ref SnsTopic
+            Filter:
+              S3Key:
+                Rules:
+                  - Name: prefix
+                    Value: raw/
+                  - Name: suffix
+                    Value: .csv
+
+  Ec2Role:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+
+  Ec2BucketAccessPolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: !Sub ds5220-dp1-bucket-policy-${AWS::StackName}
+      Roles:
+        - !Ref Ec2Role
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: BucketList
+            Effect: Allow
+            Action:
+              - s3:ListBucket
+            Resource: !Sub arn:aws:s3:::${BucketName}
+          - Sid: BucketObjects
+            Effect: Allow
+            Action:
+              - s3:GetObject
+              - s3:PutObject
+              - s3:DeleteObject
+            Resource: !Sub arn:aws:s3:::${BucketName}/*
+
+  Ec2InstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles:
+        - !Ref Ec2Role
+
+  InstanceSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow SSH from my IP and FastAPI from anywhere
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: !Ref MyIP
+        - IpProtocol: tcp
+          FromPort: 8000
+          ToPort: 8000
+          CidrIp: 0.0.0.0/0
+
+  Ec2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref UbuntuAmiId
+      InstanceType: t3.micro
+      KeyName: !Ref KeyName
+      IamInstanceProfile: !Ref Ec2InstanceProfile
+      SecurityGroupIds:
+        - !Ref InstanceSecurityGroup
+      BlockDeviceMappings:
+        - DeviceName: /dev/sda1
+          Ebs:
+            VolumeSize: 16
+            VolumeType: gp3
+            DeleteOnTermination: true
+      Tags:
+        - Key: Name
+          Value: ds5220-dp1-instance
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          set -euxo pipefail
+
+          export DEBIAN_FRONTEND=noninteractive
+
+          apt-get update -y
+          apt-get install -y git python3 python3-pip python3-venv curl
+
+          cd /opt
+          rm -rf anomaly-detection
+          git clone ${RepoUrl} anomaly-detection
+          cd /opt/anomaly-detection
+
+          python3 -m venv /opt/anomaly-detection/venv
+          /opt/anomaly-detection/venv/bin/pip install --upgrade pip
+          /opt/anomaly-detection/venv/bin/pip install -r /opt/anomaly-detection/requirements.txt
+
+          export BUCKET_NAME='${BucketName}'
+          echo "BUCKET_NAME='${BucketName}'" >> /etc/environment
+
+          cat >/etc/systemd/system/anomaly-detection.service <<EOF
+          [Unit]
+          Description=DS5220 Anomaly Detection FastAPI Service
+          After=network.target
+
+          [Service]
+          User=ubuntu
+          WorkingDirectory=/opt/anomaly-detection
+          Environment=BUCKET_NAME=${BucketName}
+          ExecStart=/opt/anomaly-detection/venv/bin/fastapi run /opt/anomaly-detection/app.py --host 0.0.0.0 --port 8000
+          Restart=always
+
+          [Install]
+          WantedBy=multi-user.target
+          EOF
+
+          chown -R ubuntu:ubuntu /opt/anomaly-detection
+          systemctl daemon-reload
+          systemctl enable anomaly-detection
+          systemctl start anomaly-detection
+
+  ElasticIP:
+    Type: AWS::EC2::EIP
+    Properties:
+      Domain: vpc
+
+  ElasticIPAssociation:
+    Type: AWS::EC2::EIPAssociation
+    Properties:
+      InstanceId: !Ref Ec2Instance
+      AllocationId: !GetAtt ElasticIP.AllocationId
+
+  SnsSubscription:
+    Type: AWS::SNS::Subscription
+    DependsOn:
+      - ElasticIPAssociation
+      - Ec2Instance
+    Properties:
+      TopicArn: !Ref SnsTopic
+      Protocol: http
+      Endpoint: !Sub http://${ElasticIP}:8000/notify
+
+Outputs:
+  BucketName:
+    Value: !Ref BucketName
+
+  InstanceId:
+    Value: !Ref Ec2Instance
+
+  ElasticIPAddress:
+    Value: !Ref ElasticIP
+
+  TopicArn:
+    Value: !Ref SnsTopic
+
+  HealthURL:
+    Value: !Sub http://${ElasticIP}:8000/health
+
+  NotifyURL:
+    Value: !Sub http://${ElasticIP}:8000/notify
